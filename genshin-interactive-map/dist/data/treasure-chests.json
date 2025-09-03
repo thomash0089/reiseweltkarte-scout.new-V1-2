@@ -1,0 +1,27 @@
+{
+  "common": [
+    { "id": 1, "position": [41.5081, -81.6044], "region": "Mondstadt", "location": "Windrise", "description": "Under the great tree", "looted": false },
+    { "id": 2, "position": [41.4993, -81.6955], "region": "Mondstadt", "location": "Falcon Coast", "description": "Near the beach rocks", "looted": false },
+    { "id": 3, "position": [41.5285, -81.5932], "region": "Mondstadt", "location": "Springvale", "description": "Behind the hunter's lodge", "looted": false },
+    { "id": 4, "position": [41.4858, -81.6782], "region": "Mondstadt", "location": "Starfell Lake", "description": "On small island", "looted": false },
+    { "id": 5, "position": [41.5156, -81.6234], "region": "Mondstadt", "location": "Whispering Woods", "description": "Hidden behind trees", "looted": false },
+    { "id": 6, "position": [40.7589, -74.0060], "region": "Liyue", "location": "Guili Plains", "description": "Near ancient ruins", "looted": false },
+    { "id": 7, "position": [40.7282, -74.0776], "region": "Liyue", "location": "Bishui Plain", "description": "Under stone bridge", "looted": false },
+    { "id": 8, "position": [40.7831, -73.9712], "region": "Liyue", "location": "Dihua Marsh", "description": "Near teleport waypoint", "looted": false },
+    { "id": 9, "position": [40.7505, -74.0445], "region": "Liyue", "location": "Stone Gate", "description": "Top of the gate structure", "looted": false },
+    { "id": 10, "position": [35.6762, 139.6503], "region": "Inazuma", "location": "Ritou", "description": "Behind merchant stalls", "looted": false }
+  ],
+  "exquisite": [
+    { "id": 11, "position": [41.5081, -81.5844], "region": "Mondstadt", "location": "Mondstadt City", "description": "On top of cathedral", "looted": false },
+    { "id": 12, "position": [41.4725, -81.6397], "region": "Mondstadt", "location": "Dawn Winery", "description": "In the cellar", "looted": false },
+    { "id": 13, "position": [41.5421, -81.6654], "region": "Mondstadt", "location": "Stormbearer Mountains", "description": "Peak of the mountain", "looted": false },
+    { "id": 14, "position": [40.7128, -74.0060], "region": "Liyue", "location": "Liyue Harbor", "description": "Jade Chamber vicinity", "looted": false },
+    { "id": 15, "position": [40.6892, -74.0445], "region": "Liyue", "location": "Mt. Tianheng", "description": "Hidden cave entrance", "looted": false },
+    { "id": 16, "position": [35.6895, 139.6917], "region": "Inazuma", "location": "Grand Narukami Shrine", "description": "Sacred tree base", "looted": false }
+  ],
+  "precious": [
+    { "id": 17, "position": [41.5288, -81.6444], "region": "Mondstadt", "location": "Dragonspine", "description": "Ancient tree summit", "looted": false },
+    { "id": 18, "position": [40.7484, -73.9857], "region": "Liyue", "location": "Jueyun Karst", "description": "Floating island", "looted": false },
+    { "id": 19, "position": [35.7090, 139.7319], "region": "Inazuma", "location": "Seirai Island", "description": "Lightning-struck peak", "looted": false }
+  ]
+}

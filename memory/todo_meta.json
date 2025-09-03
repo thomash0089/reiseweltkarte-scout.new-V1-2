@@ -1,0 +1,48 @@
+{
+  "todos": {
+    "Coordinator": {
+      "1": {
+        "id": "1",
+        "content": "Design and implement the core website structure with responsive layout",
+        "details": "1. Create HTML5 structure with header, navigation, main content area, and footer. 2. Implement CSS Grid/Flexbox for responsive layouts. 3. Set up CSS variables for theme colors and responsive breakpoints. 4. Design the header with WanderMap logo, navigation tabs, search bar, and user controls. 5. Implement dark mode toggle functionality.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "Integrate interactive map functionality using Leaflet.js",
+        "details": "1. Initialize Leaflet map with OpenStreetMap base layer. 2. Create custom markers for different destination categories (red for attractions, blue for natural sites, green for hidden gems). 3. Implement marker tooltips and click handlers. 4. Add map controls (zoom, location, fullscreen). 5. Create destination data structure and load from JSON.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "Build destination sidebar and search functionality",
+        "details": "1. Create dynamic destination sidebar that appears on marker click. 2. Implement image carousel for destination photos. 3. Build search bar with autocomplete functionality using debounced input. 4. Create filter panel with categories, price range, and rating filters. 5. Implement search result highlighting and map panning.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "4": {
+        "id": "4",
+        "content": "Implement user features and data persistence",
+        "details": "1. Create 'Saved Destinations' functionality using localStorage. 2. Build Trip Planner with timeline view and drag-drop capability. 3. Implement user authentication (Login/Sign Up) with basic session management. 4. Create saved destinations grid layout with sorting options. 5. Add note-taking functionality for trip planning.",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "5": {
+        "id": "5",
+        "content": "Optimize performance and mobile responsiveness",
+        "details": "1. Implement lazy loading for destination images. 2. Add smooth CSS transitions and animations. 3. Optimize mobile layout with collapsible sidebars and bottom sheets. 4. Test responsive design across different screen sizes. 5. Implement performance optimizations like debounced search and efficient DOM updates.",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "6": {
+        "id": "6",
+        "content": "Deploy and test the complete application",
+        "details": "1. Build the final application with all components integrated. 2. Test all interactive features including map interactions, search, filters, and user functions. 3. Verify responsive behavior on different devices. 4. Deploy to web hosting platform. 5. Conduct final user testing and bug fixes.",
+        "status": "in_progress",
+        "priority": "medium"
+      }
+    }
+  }
+}

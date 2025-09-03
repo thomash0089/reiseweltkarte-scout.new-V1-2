@@ -1,0 +1,548 @@
+[
+  {
+    "query": "High quality map of Teyvat from Genshin Impact showing all regions including Mondstadt, Liyue, Inazuma, and Sumeru",
+    "image_info": {
+      "url": "https://upload-os-bbs.hoyolab.com/upload/2024/11/27/90972232/8a39cea69144f4b63b65c5ab9ad96501_2915257153955113443.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
+      "file_path": "/workspace/imgs/genshin_impact_teyvat_map_mondstadt_liyue_inazuma_sumeru.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 74636,
+      "width": 1354,
+      "height": 1000,
+      "total_pixels": 1354000,
+      "basic_score": 0.9129614168966242
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is an exceptionally relevant and high-quality map of Teyvat from Genshin Impact, clearly depicting Mondstadt, Liyue, Inazuma, and Sumeru as requested. Its clarity is excellent, allowing for easy identification of regions and details. There are no watermarks, contributing to its professional presentation.",
+      "file_name": "genshin_impact_teyvat_map_mondstadt_liyue_inazuma_sumeru.jpg",
+      "caption": "A comprehensive high-resolution map of Teyvat from the video game Genshin Impact, showcasing the interconnected geography of its major regions. This detailed overview includes the northern plains of Mondstadt, the central mountainous landscapes of Liyue, the vast deserts and lush rainforests of Sumeru to the west, and the distant, isolated archipelago of Inazuma to the east.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High quality map of Teyvat from Genshin Impact showing all regions including Mondstadt, Liyue, Inazuma, and Sumeru",
+    "image_info": {
+      "url": "https://upload-os-bbs.hoyolab.com/upload/2022/03/24/17009971/4f65bdbe9a69a3a64ff60634858b6cda_2842106452185697547.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
+      "file_path": "/workspace/imgs/genshin_impact_teyvat_complete_world_map_regions.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 77992,
+      "width": 1000,
+      "height": 1090,
+      "total_pixels": 1090000,
+      "basic_score": 0.9273768808664283
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 30.0,
+      "overall_score": 80.0,
+      "explanation": "The image is a highly relevant and clear map of Teyvat from Genshin Impact, accurately depicting all requested regions (Mondstadt, Liyue, Inazuma, Sumeru) and also including unreleased ones like Snezhnaya, Fontaine, and Natlan for a comprehensive overview. The map's clarity is excellent, allowing easy readability of region names and geographical details. However, a visible watermark 'HoYoLAB@I. King' is present at the bottom right.",
+      "file_name": "genshin_impact_teyvat_complete_world_map_regions.jpg",
+      "caption": "A comprehensive, high-quality fan-compiled map of Teyvat from the video game Genshin Impact, showcasing all known and speculated regions. The map prominently features released nations such as Mondstadt, Liyue, Inazuma, and Sumeru, alongside future regions like Snezhnaya, Fontaine, and Natlan, giving a full overview of the continent's layout and geographical relationships. A watermark for 'HoYoLAB@I. King' is visible at the bottom right.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "The distinctive waypoint teleporter icon from Genshin Impact with its blue glowing design",
+    "image_info": {
+      "url": "https://i.redd.it/ydb9aogs9in91.png",
+      "file_path": "/workspace/imgs/genshin_impact_waypoint_teleporter_icon_above_below.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 209838,
+      "width": 500,
+      "height": 500,
+      "total_pixels": 250000,
+      "basic_score": 0.7837666431318793
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image features two icons that are highly accurate representations of the Genshin Impact waypoint teleporter, including the distinctive blue glowing design. It clearly shows both an 'active' (white, 'Above') and 'inactive' (dark, 'Below') state, making it very relevant to the prompt. The image is clean, sharp, and free of watermarks.",
+      "file_name": "genshin_impact_waypoint_teleporter_icon_above_below.png",
+      "caption": "A digital graphic depicting two versions of the Genshin Impact waypoint teleporter icon against a vibrant green background. The left icon, labeled 'Above', is white with a grey and luminous blue diamond design, representing an active or lit state. The right icon, labeled 'Below', is dark grey/black with the same grey and blue diamond, suggesting an inactive or unlit state. Both icons feature the distinctive shield-like shape characteristic of the in-game teleporters.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "The distinctive waypoint teleporter icon from Genshin Impact with its blue glowing design",
+    "image_info": {
+      "url": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/01/Genshin-Impact-Teleport-Waypoint-Icons.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_waypoint_teleporter_icon_sumeru_desert_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 128455,
+      "width": 1920,
+      "height": 1080,
+      "total_pixels": 2073600,
+      "basic_score": 0.7193498397323904
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a perfect match for the search query and prompt, clearly displaying multiple distinctive blue glowing waypoint teleporter icons on the Genshin Impact map. The selected waypoint's details are also clearly visible. The image quality is excellent, with high clarity and no watermarks.",
+      "file_name": "genshin_impact_waypoint_teleporter_icon_sumeru_desert_map.jpg",
+      "caption": "An in-game screenshot from Genshin Impact showcasing the map of the Sumeru desert region. The image prominently features several distinctive blue and glowing waypoint teleporter icons. One central waypoint, located near 'The Mausoleum of King Deshret', is selected, displaying its details as 'Hypostyle Desert, Sumeru' and 'Located in Non-Outdoor Area', along with a descriptive text about these ancient devices.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.redd.it/u0e3vswo1eu61.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_seven_elemental_symbols_official.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 122039,
+      "width": 1013,
+      "height": 570,
+      "total_pixels": 577410,
+      "basic_score": 0.8786835578910662
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "The image perfectly matches the search query and prompt by displaying all seven Genshin Impact elemental symbols (Pyro, Hydro, Anemo, Dendro, Electro, Cryo, Geo) in their official colors and designs. The image is high-resolution, clear, and free of watermarks, making it an excellent quality asset.",
+      "file_name": "genshin_impact_seven_elemental_symbols_official.jpg",
+      "caption": "A vibrant graphic showcasing all seven elemental symbols from the game Genshin Impact: Pyro (red flame), Hydro (blue wave), Anemo (teal wing), Dendro (green leaf), Electro (purple lightning), Cryo (light blue snowflake), and Geo (golden cube), set against a starry, deep blue night sky background with the Genshin Impact logo at the top.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.redd.it/ky80z98xkfsb1.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_all_seven_elemental_symbols.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 38029,
+      "width": 1008,
+      "height": 548,
+      "total_pixels": 552384,
+      "basic_score": 0.8617380974487285
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt by displaying all seven Genshin Impact elemental symbols (Pyro, Hydro, Anemo, Electro, Dendro, Cryo, Geo) in their official colors and designs. The symbols are crisp and clear, and there are no watermarks. The composition is clean and professional.",
+      "file_name": "genshin_impact_all_seven_elemental_symbols.jpg",
+      "caption": "A bright and clear image showcasing all seven elemental symbols from the popular video game Genshin Impact, set against a soft, light blue cloudy background. The symbols, displayed in their distinct official colors and designs, include Pyro (orange flame), Hydro (light blue waves), Anemo (teal wind swirl), Electro (purple lightning), Dendro (green leaves/heart), Cryo (light blue snowflake), and Geo (gold geometric pattern).",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://richies.uk/cdn/shop/files/il_fullxfull.6339775852_i546.jpg?v=1728600054&width=1024",
+      "file_path": "/workspace/imgs/Genshin-Impact-All-Seven-Elemental-Symbols.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 79303,
+      "width": 1024,
+      "height": 683,
+      "total_pixels": 699392,
+      "basic_score": 0.9010092052538585
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing all seven Genshin Impact elemental symbols (Anemo, Geo, Electro, Hydro, Pyro, Cryo, Dendro) in their accurate official colors and designs. The image is clear, well-composed, and free of watermarks. The symbols have a distinct 3D-textured appearance, which is a high-quality rendering, though the small hole on the Anemo symbol suggests a physical object like a keychain.",
+      "file_name": "Genshin-Impact-All-Seven-Elemental-Symbols.jpg",
+      "caption": "A high-quality visual representation of all seven elemental symbols from the popular video game Genshin Impact. Each symbol is presented within a distinct white circle against a solid light purple background, showcasing their official colors and intricate designs: Electro (purple), Dendro (green), Cryo (white), Geo (orange), Anemo (teal), Hydro (blue), and Pyro (red). The symbols feature a subtle 3D-textured appearance, suggesting rendered objects like keychains or pins, with the Anemo symbol specifically showing a small hole at the top.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.pinimg.com/736x/62/df/83/62df8379996911a3235273229b431bdf.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_all_seven_elemental_symbols_official.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 47622,
+      "width": 736,
+      "height": 458,
+      "total_pixels": 337088,
+      "basic_score": 0.7972434816008754
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 95.0,
+      "overall_score": 98.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, showcasing all seven official Genshin Impact elemental symbols (Pyro, Hydro, Anemo, Electro, Dendro, Cryo, Geo) in their accurate colors and designs. Clarity is excellent with crisp, high-quality graphics. The official Genshin Impact logos present on the sides are part of the branding and do not function as intrusive watermarks, contributing to a high overall professional quality.",
+      "file_name": "genshin_impact_all_seven_elemental_symbols_official.jpg",
+      "caption": "A vibrant collection of all seven official elemental symbols from the game Genshin Impact, displayed against a solid black background. The symbols are presented in two rows, showcasing Pyro (orange flame), Hydro (light blue waves), Anemo (teal wings), Electro (purple swirling shape) in the top row, and Dendro (lime green heart-leaf), Cryo (light blue snowflake), and Geo (orange square spiral) in the bottom row. The official 'Genshin Impact' logo is vertically aligned on both the left and right sides of the arrangement.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.pinimg.com/736x/6a/64/ff/6a64ff82fb58bdbd83c1676b876fa7b6.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_seven_elements_symbols_official_colors.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 37389,
+      "width": 736,
+      "height": 736,
+      "total_pixels": 541696,
+      "basic_score": 0.8599958016328108
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "The image perfectly matches the search query and prompt by displaying all seven Genshin Impact elemental symbols (Pyro, Geo, Electro, Hydro, Anemo, Cryo, Dendro) in their official colors and designs. The image quality is excellent, with crisp lines, vibrant colors, and no watermarks or clarity issues. The composition is clean and well-arranged.",
+      "file_name": "genshin_impact_seven_elements_symbols_official_colors.jpg",
+      "caption": "A vibrant graphic showcasing the seven elemental symbols from the popular video game Genshin Impact, arranged symmetrically around the central Genshin Impact logo. Each symbol is rendered in its distinctive official color: red for Pyro, orange for Geo, light blue for Hydro, purple for Electro, teal for Anemo, a light blue snowflake for Cryo, and green for Dendro. The clean design emphasizes the unique visual identity of each element.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Collection of material icons from Genshin Impact including mining ores and collectible plants",
+    "image_info": {
+      "url": "https://upload-os-bbs.hoyolab.com/upload/2021/01/19/28014500/c56803cc6b58d8faeb7803165f8eddff_5036836940598295896.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
+      "file_path": "/workspace/imgs/genshin-impact-material-inventory-ores-plants.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 60672,
+      "width": 1366,
+      "height": 768,
+      "total_pixels": 1049088,
+      "basic_score": 0.9394680777496482
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 40.0,
+      "overall_score": 85.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, showcasing a wide collection of Genshin Impact material icons, including various mining ores and collectible plants, within the game's inventory interface. The clarity is excellent, with sharp details and readable text. However, a noticeable watermark is present in the bottom right corner, which reduces its overall professional quality score.",
+      "file_name": "genshin-impact-material-inventory-ores-plants.jpg",
+      "caption": "A detailed screenshot from the video game Genshin Impact, displaying the 'Materials' tab of the player's inventory. The screen is filled with a comprehensive collection of various in-game resources, prominently featuring mining ores like the highlighted 'Magical Crystal Chunk' and other raw materials, alongside numerous collectible plants such as mushrooms, carrots, and different types of flora. Other monster drops and processed items are also visible, showcasing the diversity of materials.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Collection of material icons from Genshin Impact including mining ores and collectible plants",
+    "image_info": {
+      "url": "https://preview.redd.it/wjzasbeea9j71.jpg?width=1080&crop=smart&auto=webp&s=c30fe19a3b3ff392b3f0acc35b9d291d43b5f284",
+      "file_path": "/workspace/imgs/genshin_impact_inazuma_material_farming_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 131925,
+      "width": 1080,
+      "height": 810,
+      "total_pixels": 874800,
+      "basic_score": 0.9301963346254448
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant as it clearly displays a Genshin Impact map with optimized routes for collecting in-game materials, including ores and plants, marked by various colored lines and purple icons. The clarity is excellent, with no visible watermarks, making it a professional and useful resource.",
+      "file_name": "genshin_impact_inazuma_material_farming_map.jpg",
+      "caption": "A detailed map from the game Genshin Impact, showcasing optimized farming routes for collecting in-game materials on Narukami Island in Inazuma. The map features green, blue, and red lines indicating 'Quick,' 'Balanced,' and 'Complete' collection paths, respectively. Numbered purple icons mark the locations of various valuable resources like ores, plants, and regional specialties, with 'START!' points guiding players from key areas such as Grand Narukami Shrine, Konda Village, and Komisato Estate.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Collection of material icons from Genshin Impact including mining ores and collectible plants",
+    "image_info": {
+      "url": "https://i.redd.it/gdt4ywjw57w81.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_chasm_underground_mines_mining_guide_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 203665,
+      "width": 1200,
+      "height": 1200,
+      "total_pixels": 1440000,
+      "basic_score": 0.8875542670857292
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 85.0,
+      "watermark_score": 70.0,
+      "overall_score": 80.0,
+      "explanation": "The image is a detailed Genshin Impact mining guide map for The Underground Mines (Chasm region), directly showing numerous locations of mining ores and other collectible materials via distinct icons. This makes it highly relevant to the search query and prompt about Genshin Impact materials, mining ores, and collections of icons, even if the icons are integrated into a map rather than presented as a standalone collection. The clarity is good, allowing legibility of text and icons. A visible watermark is present at the bottom left.",
+      "file_name": "genshin_impact_chasm_underground_mines_mining_guide_map.jpg",
+      "caption": "A detailed overhead map of The Underground Mines in Genshin Impact's Chasm region, serving as a comprehensive mining guide. The map outlines various named sub-regions such as Ad-Hoc Main Tunnel, The Serpent's Cave, Underground Waterway, The Glowing Narrows, Nameless Ruins, Stony Halls, and The Chasm: Main Mining Area. It is richly populated with distinct icons indicating the precise locations of mining ores (brown rock icons) and other collectible materials (blue crystal icons), aiding players in resource gathering. A legend is included to differentiate between higher and lower altitude objects and paths.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/DZJwwr-b2sI/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_strange_parchment_achievement_scroll.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 127380,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9325995153227277
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 88.0,
+      "explanation": "The image is highly relevant, perfectly matching the search query and prompt by featuring Genshin Impact achievement and quest-related parchment scrolls. The parchment texture and fantasy styling are clearly visible. The image is clear with no watermarks, and the overall composition is professional, though the large overlaid text slightly deviates from a pure in-game capture.",
+      "file_name": "genshin_impact_strange_parchment_achievement_scroll.jpg",
+      "caption": "A composite image from Genshin Impact featuring a detailed map with red quest markings and a rolled-up parchment scroll with illegible text, both displaying authentic parchment texture. An 'Achievement Completed' pop-up for 'Call of the Nameless City' is visible on the right, set against a dark, lush jungle background typical of the game's fantasy styling. Large, bold text 'STRANGE PARCHMENT' overlays the top of the image.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/W8cKTKNch4U/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/genshin-impact-strange-parchment-achievement-call-of-nameless-city.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 156409,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9353736872973574
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant, directly depicting a 'Strange Parchment' and an 'Achievement Completed' notification ('Call of the Nameless City'), both specific to Genshin Impact. The parchment texture and fantasy styling are clearly present. The image is very clear, well-composed, and appears to be a professionally created asset, likely for a game guide or video thumbnail, with no watermarks.",
+      "file_name": "genshin-impact-strange-parchment-achievement-call-of-nameless-city.jpg",
+      "caption": "A composite image from Genshin Impact featuring a central title 'STRANGE PARCHMENT'. The visual elements include a glowing, rolled parchment scroll with unreadable ancient script, a stylized map segment showing a dotted red path with 'X' marks and a red arrow, and a prominent 'Achievement Completed' banner displaying 'Call of the Nameless City'. A glowing golden treasure chest is visible on the right, adding to the fantasy theme. The image is designed to highlight an in-game achievement or quest related to a mysterious scroll.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/08/mysterious-parchment-of-sumeru-full-guide-in-genshin-impact.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_quest_parchment_scroll_items.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 127958,
+      "width": 1800,
+      "height": 900,
+      "total_pixels": 1620000,
+      "basic_score": 0.8345266082252577
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant, perfectly matching the 'Genshin Impact', 'quest scroll', 'parchment texture', and 'fantasy styling' aspects of the prompt. The clarity is excellent for a game screenshot, with legible text and clear item visuals. There are no watermarks. Overall, it's a high-quality capture that directly addresses the query.",
+      "file_name": "genshin_impact_quest_parchment_scroll_items.jpg",
+      "caption": "A detailed in-game screenshot from Genshin Impact showcasing three distinct Quest Items: 'Unsealed Parchment', 'Guiding Parchment', and 'Whispering Parchment'. Each item is depicted as an ancient, glowing parchment scroll with a textured surface and glowing blue runes, characteristic of fantasy styling. Below each scroll icon is a uniform description: 'An ancient and mysterious roll of parchment. It looks like a note left by an adventurer. New words keep appearing on it.' The image captures the UI elements with high clarity, displaying the design of quest-related scrolls within the game's fantasy world.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://img.gamewith.net/article/thumbnail/rectangle/34980.png",
+      "file_path": "/workspace/imgs/genshin-impact-mysterious-parchment-quest-scroll-design.jpg",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 87700,
+      "width": 600,
+      "height": 315,
+      "total_pixels": 189000,
+      "basic_score": 0.7382509378509285
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the prompt, perfectly showcasing a quest scroll design from Genshin Impact with clear parchment texture and strong fantasy styling. Its clarity is excellent, and it contains no watermarks, making it a high-quality digital asset.",
+      "file_name": "genshin-impact-mysterious-parchment-quest-scroll-design.jpg",
+      "caption": "An in-game graphical user interface (GUI) element from Genshin Impact, displaying a 'Quest Item' named 'Mysterious Parchment'. The image features a detailed illustration of a vintage-style rolled scroll with glowing, unreadable magical text and ethereal blue wisps, set against a dark grey background with ornate gold borders characteristic of the game's fantasy aesthetic. This design exemplifies a quest or achievement scroll from the popular action role-playing game.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/r9Kr_2w4h78/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_strange_parchment_puzzle_scroll_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 156241,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9353578762775174
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 95.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the search query and prompt, directly featuring 'Genshin Impact', 'scrolls', 'parchment', and a puzzle element. The parchment texture and fantasy styling are clearly visible. Clarity is excellent, and the Genshin Impact logo is a relevant brand identifier rather than an intrusive watermark. The overall quality is professional and well-composed for its intended purpose.",
+      "file_name": "genshin_impact_strange_parchment_puzzle_scroll_map.jpg",
+      "caption": "A promotional image or guide thumbnail for Genshin Impact, featuring the text 'ALL 4/4 SCROLLS STRANGE PARCHMENT PUZZLE' on the left side. The right side displays a section of a textured parchment map with red 'X' marks and arrows indicating a path or solution, characteristic of a quest or puzzle guide. The Genshin Impact logo is visible in the bottom right corner.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://64.media.tumblr.com/8ca6b71c30a5d7ccc6bca96fec09df52/12c3d1e74133f17f-be/s1280x1920/ae8dc04805a347fa71e81f2fe528a1e8d0fabdac.png",
+      "file_path": "/workspace/imgs/genshin_impact_ui_background_textures_fantasy_elements.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 515612,
+      "width": 1024,
+      "height": 1024,
+      "total_pixels": 1048576,
+      "basic_score": 0.9471893707594763
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image is highly relevant to the search query, providing a collection of UI elements and background textures that strongly match the Genshin Impact aesthetic. It includes various colored panels with fantasy-themed patterns, specifically gold/orange and multiple shades of blue/teal/purple that align with 'deep blue' elements. While not a single seamless background, it contains distinct texture panels that could be used seamlessly. The image is exceptionally clear, high-resolution, and free of watermarks.",
+      "file_name": "genshin_impact_ui_background_textures_fantasy_elements.png",
+      "caption": "A high-resolution sprite sheet showcasing various user interface (UI) elements and background textures inspired by the Genshin Impact aesthetic. The image features six large rectangular panels in shades of grey, teal, light blue, purple, gold/orange, and cream, each adorned with a subtle, stylized Celtic knot or triquetra pattern. Alongside these, there are smaller UI components including rectangular banners, leaf-shaped icons, and miscellaneous decorative elements in corresponding fantasy-inspired colors.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://64.media.tumblr.com/7b52efd0ed087b04fbfe81d6cbb69b0b/da8944758db163c5-bb/s1280x1920/42ad0f8ee528dc4649c5bb4c0d591a879b735ca5.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_fantasy_ui_background_blue_gold_mountains.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 143312,
+      "width": 1280,
+      "height": 553,
+      "total_pixels": 707840,
+      "basic_score": 0.8640222420201289
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 85.0,
+      "clarity_score": 95.0,
+      "watermark_score": 75.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the Genshin Impact aesthetic, featuring a beautiful fantasy landscape with deep blue and purple hues and elements that could be interpreted as gold/glowing. Its high quality makes it suitable for a UI background. However, it's a scenic image rather than a tileable 'texture,' and it contains a small watermark.",
+      "file_name": "genshin_impact_fantasy_ui_background_blue_gold_mountains.jpg",
+      "caption": "A breathtaking wide-angle landscape from Genshin Impact, depicting a mystical fantasy world bathed in deep blue and purple twilight. Towering, stylized mountains dominate the scene, intermingled with ancient, glowing structures that emit a soft, ethereal light. A starry sky twinkles above a ethereal mist, creating a magical atmosphere perfectly aligned with the game's aesthetic.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://i.redd.it/pelptavtb7n91.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_ui_fantasy_landscape_blue_gold_sky.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 197613,
+      "width": 1920,
+      "height": 1080,
+      "total_pixels": 2073600,
+      "basic_score": 0.7251293551118825
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the requested 'Genshin Impact UI aesthetic' with its stylized fantasy landscape, deep blue sky, and subtle gold elements. The digital art is of very high quality, clear, and professional, making it ideal as a UI background. While not a repeating 'texture' in the strictest sense, it functions exceptionally well as a static background for UI.",
+      "file_name": "genshin_impact_ui_fantasy_landscape_blue_gold_sky.jpg",
+      "caption": "A stunning stylized digital painting of a vibrant fantasy landscape, highly reminiscent of the Genshin Impact art style. The scene features a prominent, ancient-looking tree with lush foliage, growing from an elevated or floating island adorned with small, quaint structures. The background is dominated by a deep blue sky with an ornate circular pattern and radiating golden light, complemented by elegant, stylized clouds. Rolling green mountains in various shades and a serene body of water complete the panoramic view, with several glowing braziers adding to the mystical ambiance in the foreground.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://64.media.tumblr.com/58c0b9c88ed9d1941f97645be482e6d7/2ffb11633c4daf2b-94/s1280x1920/dbc7b4f632e1f8b0b5768486cd5403854eb2c76c.png",
+      "file_path": "/workspace/imgs/genshin_impact_ui_style_background_texture_teal_cream.jpg",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 304850,
+      "width": 1024,
+      "height": 512,
+      "total_pixels": 524288,
+      "basic_score": 0.8607020198333721
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image strongly matches the Genshin Impact UI aesthetic, featuring a clean, stylized background with subtle textures, layered elements, and fantasy motifs like swirling patterns and stars. While the blue is more teal/light blue and the 'gold' is closer to cream/beige than deep blue and true gold, the overall style and quality are excellent, making it highly suitable as a UI background texture.",
+      "file_name": "genshin_impact_ui_style_background_texture_teal_cream.jpg",
+      "caption": "A high-quality digital background featuring a layered, stylized design reminiscent of Genshin Impact's user interface. The left side showcases a subtle light beige or cream diamond pattern, transitioning into a vibrant teal or light blue section on the right with swirling wave-like patterns and small stars. A large, multi-layered circular element with a textured cream core and a smaller starburst design dominates the center-right, framed by curved lines in light beige and white. The overall aesthetic is clean, professional, and evokes a fantasy setting.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]

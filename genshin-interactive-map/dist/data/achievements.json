@@ -1,0 +1,85 @@
+{
+  "achievements": [
+    {
+      "id": 1,
+      "name": "Mondstadt: The City of Freedom",
+      "category": "Wonders of the World",
+      "description": "Reach Reputation Level 8 in Mondstadt",
+      "requirements": [
+        "Complete World Quests in Mondstadt",
+        "Find all Anemoculi in Mondstadt",
+        "Complete Bounties and Requests"
+      ],
+      "progress": 75,
+      "maxProgress": 100,
+      "completed": false,
+      "primogems": 20,
+      "relatedLocations": [[41.5081, -81.5844]]
+    },
+    {
+      "id": 2,
+      "name": "Liyue: The Harbor of Stone and Contracts", 
+      "category": "Wonders of the World",
+      "description": "Reach Reputation Level 8 in Liyue",
+      "requirements": [
+        "Complete World Quests in Liyue",
+        "Find all Geoculi in Liyue",
+        "Complete Bounties and Requests"
+      ],
+      "progress": 60,
+      "maxProgress": 100,
+      "completed": false,
+      "primogems": 20,
+      "relatedLocations": [[40.7128, -74.0060]]
+    },
+    {
+      "id": 3,
+      "name": "Electro Treasure Hunter",
+      "category": "Elemental Specialist", 
+      "description": "Open 100 treasure chests in Inazuma",
+      "requirements": [
+        "Open Common Chests: 60/60",
+        "Open Exquisite Chests: 30/30", 
+        "Open Precious Chests: 10/10"
+      ],
+      "progress": 85,
+      "maxProgress": 100,
+      "completed": false,
+      "primogems": 10,
+      "relatedLocations": [[35.6762, 139.6503], [35.6895, 139.6917]]
+    },
+    {
+      "id": 4,
+      "name": "Dendro Enthusiast", 
+      "category": "Elemental Specialist",
+      "description": "Collect 200 Dendro specialties from Sumeru",
+      "requirements": [
+        "Collect Nilotpala Lotus: 50/50",
+        "Collect Kalpalata Lotus: 50/50",
+        "Collect Padisarah: 50/50",
+        "Collect Rukkhashava Mushroom: 50/50"
+      ],
+      "progress": 45,
+      "maxProgress": 100,
+      "completed": false,
+      "primogems": 10,
+      "relatedLocations": [[23.8103, 90.4125], [23.8859, 90.3964]]
+    },
+    {
+      "id": 5,
+      "name": "Call of the Nameless City",
+      "category": "Mortal Travails",
+      "description": "Complete the Strange Parchment questline", 
+      "requirements": [
+        "Find all 4 Strange Parchments",
+        "Solve the ancient puzzle",
+        "Discover the hidden treasure"
+      ],
+      "progress": 100,
+      "maxProgress": 100,
+      "completed": true,
+      "primogems": 40,
+      "relatedLocations": [[23.7644, 90.3656]]
+    }
+  ]
+}

@@ -1,0 +1,1016 @@
+[
+  {
+    "query": "High quality map of Teyvat from Genshin Impact showing all regions including Mondstadt, Liyue, Inazuma, and Sumeru",
+    "image_info": {
+      "url": "https://upload-os-bbs.hoyolab.com/upload/2024/11/27/90972232/8a39cea69144f4b63b65c5ab9ad96501_2915257153955113443.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
+      "file_path": "/workspace/imgs/genshin_impact_teyvat_map_mondstadt_liyue_inazuma_sumeru.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 74636,
+      "width": 1354,
+      "height": 1000,
+      "total_pixels": 1354000,
+      "basic_score": 0.9129614168966242
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is an exceptionally relevant and high-quality map of Teyvat from Genshin Impact, clearly depicting Mondstadt, Liyue, Inazuma, and Sumeru as requested. Its clarity is excellent, allowing for easy identification of regions and details. There are no watermarks, contributing to its professional presentation.",
+      "file_name": "genshin_impact_teyvat_map_mondstadt_liyue_inazuma_sumeru.jpg",
+      "caption": "A comprehensive high-resolution map of Teyvat from the video game Genshin Impact, showcasing the interconnected geography of its major regions. This detailed overview includes the northern plains of Mondstadt, the central mountainous landscapes of Liyue, the vast deserts and lush rainforests of Sumeru to the west, and the distant, isolated archipelago of Inazuma to the east.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High quality map of Teyvat from Genshin Impact showing all regions including Mondstadt, Liyue, Inazuma, and Sumeru",
+    "image_info": {
+      "url": "https://upload-os-bbs.hoyolab.com/upload/2022/03/24/17009971/4f65bdbe9a69a3a64ff60634858b6cda_2842106452185697547.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
+      "file_path": "/workspace/imgs/genshin_impact_teyvat_complete_world_map_regions.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 77992,
+      "width": 1000,
+      "height": 1090,
+      "total_pixels": 1090000,
+      "basic_score": 0.9273768808664283
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 30.0,
+      "overall_score": 80.0,
+      "explanation": "The image is a highly relevant and clear map of Teyvat from Genshin Impact, accurately depicting all requested regions (Mondstadt, Liyue, Inazuma, Sumeru) and also including unreleased ones like Snezhnaya, Fontaine, and Natlan for a comprehensive overview. The map's clarity is excellent, allowing easy readability of region names and geographical details. However, a visible watermark 'HoYoLAB@I. King' is present at the bottom right.",
+      "file_name": "genshin_impact_teyvat_complete_world_map_regions.jpg",
+      "caption": "A comprehensive, high-quality fan-compiled map of Teyvat from the video game Genshin Impact, showcasing all known and speculated regions. The map prominently features released nations such as Mondstadt, Liyue, Inazuma, and Sumeru, alongside future regions like Snezhnaya, Fontaine, and Natlan, giving a full overview of the continent's layout and geographical relationships. A watermark for 'HoYoLAB@I. King' is visible at the bottom right.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "The distinctive waypoint teleporter icon from Genshin Impact with its blue glowing design",
+    "image_info": {
+      "url": "https://i.redd.it/ydb9aogs9in91.png",
+      "file_path": "/workspace/imgs/genshin_impact_waypoint_teleporter_icon_above_below.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 209838,
+      "width": 500,
+      "height": 500,
+      "total_pixels": 250000,
+      "basic_score": 0.7837666431318793
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image features two icons that are highly accurate representations of the Genshin Impact waypoint teleporter, including the distinctive blue glowing design. It clearly shows both an 'active' (white, 'Above') and 'inactive' (dark, 'Below') state, making it very relevant to the prompt. The image is clean, sharp, and free of watermarks.",
+      "file_name": "genshin_impact_waypoint_teleporter_icon_above_below.png",
+      "caption": "A digital graphic depicting two versions of the Genshin Impact waypoint teleporter icon against a vibrant green background. The left icon, labeled 'Above', is white with a grey and luminous blue diamond design, representing an active or lit state. The right icon, labeled 'Below', is dark grey/black with the same grey and blue diamond, suggesting an inactive or unlit state. Both icons feature the distinctive shield-like shape characteristic of the in-game teleporters.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "The distinctive waypoint teleporter icon from Genshin Impact with its blue glowing design",
+    "image_info": {
+      "url": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/01/Genshin-Impact-Teleport-Waypoint-Icons.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_waypoint_teleporter_icon_sumeru_desert_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 128455,
+      "width": 1920,
+      "height": 1080,
+      "total_pixels": 2073600,
+      "basic_score": 0.7193498397323904
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a perfect match for the search query and prompt, clearly displaying multiple distinctive blue glowing waypoint teleporter icons on the Genshin Impact map. The selected waypoint's details are also clearly visible. The image quality is excellent, with high clarity and no watermarks.",
+      "file_name": "genshin_impact_waypoint_teleporter_icon_sumeru_desert_map.jpg",
+      "caption": "An in-game screenshot from Genshin Impact showcasing the map of the Sumeru desert region. The image prominently features several distinctive blue and glowing waypoint teleporter icons. One central waypoint, located near 'The Mausoleum of King Deshret', is selected, displaying its details as 'Hypostyle Desert, Sumeru' and 'Located in Non-Outdoor Area', along with a descriptive text about these ancient devices.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.redd.it/u0e3vswo1eu61.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_seven_elemental_symbols_official.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 122039,
+      "width": 1013,
+      "height": 570,
+      "total_pixels": 577410,
+      "basic_score": 0.8786835578910662
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "The image perfectly matches the search query and prompt by displaying all seven Genshin Impact elemental symbols (Pyro, Hydro, Anemo, Dendro, Electro, Cryo, Geo) in their official colors and designs. The image is high-resolution, clear, and free of watermarks, making it an excellent quality asset.",
+      "file_name": "genshin_impact_seven_elemental_symbols_official.jpg",
+      "caption": "A vibrant graphic showcasing all seven elemental symbols from the game Genshin Impact: Pyro (red flame), Hydro (blue wave), Anemo (teal wing), Dendro (green leaf), Electro (purple lightning), Cryo (light blue snowflake), and Geo (golden cube), set against a starry, deep blue night sky background with the Genshin Impact logo at the top.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.redd.it/ky80z98xkfsb1.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_all_seven_elemental_symbols.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 38029,
+      "width": 1008,
+      "height": 548,
+      "total_pixels": 552384,
+      "basic_score": 0.8617380974487285
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt by displaying all seven Genshin Impact elemental symbols (Pyro, Hydro, Anemo, Electro, Dendro, Cryo, Geo) in their official colors and designs. The symbols are crisp and clear, and there are no watermarks. The composition is clean and professional.",
+      "file_name": "genshin_impact_all_seven_elemental_symbols.jpg",
+      "caption": "A bright and clear image showcasing all seven elemental symbols from the popular video game Genshin Impact, set against a soft, light blue cloudy background. The symbols, displayed in their distinct official colors and designs, include Pyro (orange flame), Hydro (light blue waves), Anemo (teal wind swirl), Electro (purple lightning), Dendro (green leaves/heart), Cryo (light blue snowflake), and Geo (gold geometric pattern).",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://richies.uk/cdn/shop/files/il_fullxfull.6339775852_i546.jpg?v=1728600054&width=1024",
+      "file_path": "/workspace/imgs/Genshin-Impact-All-Seven-Elemental-Symbols.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 79303,
+      "width": 1024,
+      "height": 683,
+      "total_pixels": 699392,
+      "basic_score": 0.9010092052538585
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing all seven Genshin Impact elemental symbols (Anemo, Geo, Electro, Hydro, Pyro, Cryo, Dendro) in their accurate official colors and designs. The image is clear, well-composed, and free of watermarks. The symbols have a distinct 3D-textured appearance, which is a high-quality rendering, though the small hole on the Anemo symbol suggests a physical object like a keychain.",
+      "file_name": "Genshin-Impact-All-Seven-Elemental-Symbols.jpg",
+      "caption": "A high-quality visual representation of all seven elemental symbols from the popular video game Genshin Impact. Each symbol is presented within a distinct white circle against a solid light purple background, showcasing their official colors and intricate designs: Electro (purple), Dendro (green), Cryo (white), Geo (orange), Anemo (teal), Hydro (blue), and Pyro (red). The symbols feature a subtle 3D-textured appearance, suggesting rendered objects like keychains or pins, with the Anemo symbol specifically showing a small hole at the top.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.pinimg.com/736x/62/df/83/62df8379996911a3235273229b431bdf.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_all_seven_elemental_symbols_official.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 47622,
+      "width": 736,
+      "height": 458,
+      "total_pixels": 337088,
+      "basic_score": 0.7972434816008754
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 95.0,
+      "overall_score": 98.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, showcasing all seven official Genshin Impact elemental symbols (Pyro, Hydro, Anemo, Electro, Dendro, Cryo, Geo) in their accurate colors and designs. Clarity is excellent with crisp, high-quality graphics. The official Genshin Impact logos present on the sides are part of the branding and do not function as intrusive watermarks, contributing to a high overall professional quality.",
+      "file_name": "genshin_impact_all_seven_elemental_symbols_official.jpg",
+      "caption": "A vibrant collection of all seven official elemental symbols from the game Genshin Impact, displayed against a solid black background. The symbols are presented in two rows, showcasing Pyro (orange flame), Hydro (light blue waves), Anemo (teal wings), Electro (purple swirling shape) in the top row, and Dendro (lime green heart-leaf), Cryo (light blue snowflake), and Geo (orange square spiral) in the bottom row. The official 'Genshin Impact' logo is vertically aligned on both the left and right sides of the arrangement.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "All seven elemental symbols from Genshin Impact in their official colors and designs",
+    "image_info": {
+      "url": "https://i.pinimg.com/736x/6a/64/ff/6a64ff82fb58bdbd83c1676b876fa7b6.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_seven_elements_symbols_official_colors.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 37389,
+      "width": 736,
+      "height": 736,
+      "total_pixels": 541696,
+      "basic_score": 0.8599958016328108
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "The image perfectly matches the search query and prompt by displaying all seven Genshin Impact elemental symbols (Pyro, Geo, Electro, Hydro, Anemo, Cryo, Dendro) in their official colors and designs. The image quality is excellent, with crisp lines, vibrant colors, and no watermarks or clarity issues. The composition is clean and well-arranged.",
+      "file_name": "genshin_impact_seven_elements_symbols_official_colors.jpg",
+      "caption": "A vibrant graphic showcasing the seven elemental symbols from the popular video game Genshin Impact, arranged symmetrically around the central Genshin Impact logo. Each symbol is rendered in its distinctive official color: red for Pyro, orange for Geo, light blue for Hydro, purple for Electro, teal for Anemo, a light blue snowflake for Cryo, and green for Dendro. The clean design emphasizes the unique visual identity of each element.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Collection of material icons from Genshin Impact including mining ores and collectible plants",
+    "image_info": {
+      "url": "https://upload-os-bbs.hoyolab.com/upload/2021/01/19/28014500/c56803cc6b58d8faeb7803165f8eddff_5036836940598295896.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
+      "file_path": "/workspace/imgs/genshin-impact-material-inventory-ores-plants.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 60672,
+      "width": 1366,
+      "height": 768,
+      "total_pixels": 1049088,
+      "basic_score": 0.9394680777496482
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 40.0,
+      "overall_score": 85.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, showcasing a wide collection of Genshin Impact material icons, including various mining ores and collectible plants, within the game's inventory interface. The clarity is excellent, with sharp details and readable text. However, a noticeable watermark is present in the bottom right corner, which reduces its overall professional quality score.",
+      "file_name": "genshin-impact-material-inventory-ores-plants.jpg",
+      "caption": "A detailed screenshot from the video game Genshin Impact, displaying the 'Materials' tab of the player's inventory. The screen is filled with a comprehensive collection of various in-game resources, prominently featuring mining ores like the highlighted 'Magical Crystal Chunk' and other raw materials, alongside numerous collectible plants such as mushrooms, carrots, and different types of flora. Other monster drops and processed items are also visible, showcasing the diversity of materials.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Collection of material icons from Genshin Impact including mining ores and collectible plants",
+    "image_info": {
+      "url": "https://preview.redd.it/wjzasbeea9j71.jpg?width=1080&crop=smart&auto=webp&s=c30fe19a3b3ff392b3f0acc35b9d291d43b5f284",
+      "file_path": "/workspace/imgs/genshin_impact_inazuma_material_farming_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 131925,
+      "width": 1080,
+      "height": 810,
+      "total_pixels": 874800,
+      "basic_score": 0.9301963346254448
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant as it clearly displays a Genshin Impact map with optimized routes for collecting in-game materials, including ores and plants, marked by various colored lines and purple icons. The clarity is excellent, with no visible watermarks, making it a professional and useful resource.",
+      "file_name": "genshin_impact_inazuma_material_farming_map.jpg",
+      "caption": "A detailed map from the game Genshin Impact, showcasing optimized farming routes for collecting in-game materials on Narukami Island in Inazuma. The map features green, blue, and red lines indicating 'Quick,' 'Balanced,' and 'Complete' collection paths, respectively. Numbered purple icons mark the locations of various valuable resources like ores, plants, and regional specialties, with 'START!' points guiding players from key areas such as Grand Narukami Shrine, Konda Village, and Komisato Estate.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Collection of material icons from Genshin Impact including mining ores and collectible plants",
+    "image_info": {
+      "url": "https://i.redd.it/gdt4ywjw57w81.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_chasm_underground_mines_mining_guide_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 203665,
+      "width": 1200,
+      "height": 1200,
+      "total_pixels": 1440000,
+      "basic_score": 0.8875542670857292
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 85.0,
+      "watermark_score": 70.0,
+      "overall_score": 80.0,
+      "explanation": "The image is a detailed Genshin Impact mining guide map for The Underground Mines (Chasm region), directly showing numerous locations of mining ores and other collectible materials via distinct icons. This makes it highly relevant to the search query and prompt about Genshin Impact materials, mining ores, and collections of icons, even if the icons are integrated into a map rather than presented as a standalone collection. The clarity is good, allowing legibility of text and icons. A visible watermark is present at the bottom left.",
+      "file_name": "genshin_impact_chasm_underground_mines_mining_guide_map.jpg",
+      "caption": "A detailed overhead map of The Underground Mines in Genshin Impact's Chasm region, serving as a comprehensive mining guide. The map outlines various named sub-regions such as Ad-Hoc Main Tunnel, The Serpent's Cave, Underground Waterway, The Glowing Narrows, Nameless Ruins, Stony Halls, and The Chasm: Main Mining Area. It is richly populated with distinct icons indicating the precise locations of mining ores (brown rock icons) and other collectible materials (blue crystal icons), aiding players in resource gathering. A legend is included to differentiate between higher and lower altitude objects and paths.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/DZJwwr-b2sI/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_strange_parchment_achievement_scroll.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 127380,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9325995153227277
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 88.0,
+      "explanation": "The image is highly relevant, perfectly matching the search query and prompt by featuring Genshin Impact achievement and quest-related parchment scrolls. The parchment texture and fantasy styling are clearly visible. The image is clear with no watermarks, and the overall composition is professional, though the large overlaid text slightly deviates from a pure in-game capture.",
+      "file_name": "genshin_impact_strange_parchment_achievement_scroll.jpg",
+      "caption": "A composite image from Genshin Impact featuring a detailed map with red quest markings and a rolled-up parchment scroll with illegible text, both displaying authentic parchment texture. An 'Achievement Completed' pop-up for 'Call of the Nameless City' is visible on the right, set against a dark, lush jungle background typical of the game's fantasy styling. Large, bold text 'STRANGE PARCHMENT' overlays the top of the image.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/W8cKTKNch4U/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/genshin-impact-strange-parchment-achievement-call-of-nameless-city.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 156409,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9353736872973574
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant, directly depicting a 'Strange Parchment' and an 'Achievement Completed' notification ('Call of the Nameless City'), both specific to Genshin Impact. The parchment texture and fantasy styling are clearly present. The image is very clear, well-composed, and appears to be a professionally created asset, likely for a game guide or video thumbnail, with no watermarks.",
+      "file_name": "genshin-impact-strange-parchment-achievement-call-of-nameless-city.jpg",
+      "caption": "A composite image from Genshin Impact featuring a central title 'STRANGE PARCHMENT'. The visual elements include a glowing, rolled parchment scroll with unreadable ancient script, a stylized map segment showing a dotted red path with 'X' marks and a red arrow, and a prominent 'Achievement Completed' banner displaying 'Call of the Nameless City'. A glowing golden treasure chest is visible on the right, adding to the fantasy theme. The image is designed to highlight an in-game achievement or quest related to a mysterious scroll.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/08/mysterious-parchment-of-sumeru-full-guide-in-genshin-impact.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_quest_parchment_scroll_items.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 127958,
+      "width": 1800,
+      "height": 900,
+      "total_pixels": 1620000,
+      "basic_score": 0.8345266082252577
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant, perfectly matching the 'Genshin Impact', 'quest scroll', 'parchment texture', and 'fantasy styling' aspects of the prompt. The clarity is excellent for a game screenshot, with legible text and clear item visuals. There are no watermarks. Overall, it's a high-quality capture that directly addresses the query.",
+      "file_name": "genshin_impact_quest_parchment_scroll_items.jpg",
+      "caption": "A detailed in-game screenshot from Genshin Impact showcasing three distinct Quest Items: 'Unsealed Parchment', 'Guiding Parchment', and 'Whispering Parchment'. Each item is depicted as an ancient, glowing parchment scroll with a textured surface and glowing blue runes, characteristic of fantasy styling. Below each scroll icon is a uniform description: 'An ancient and mysterious roll of parchment. It looks like a note left by an adventurer. New words keep appearing on it.' The image captures the UI elements with high clarity, displaying the design of quest-related scrolls within the game's fantasy world.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://img.gamewith.net/article/thumbnail/rectangle/34980.png",
+      "file_path": "/workspace/imgs/genshin-impact-mysterious-parchment-quest-scroll-design.jpg",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 87700,
+      "width": 600,
+      "height": 315,
+      "total_pixels": 189000,
+      "basic_score": 0.7382509378509285
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the prompt, perfectly showcasing a quest scroll design from Genshin Impact with clear parchment texture and strong fantasy styling. Its clarity is excellent, and it contains no watermarks, making it a high-quality digital asset.",
+      "file_name": "genshin-impact-mysterious-parchment-quest-scroll-design.jpg",
+      "caption": "An in-game graphical user interface (GUI) element from Genshin Impact, displaying a 'Quest Item' named 'Mysterious Parchment'. The image features a detailed illustration of a vintage-style rolled scroll with glowing, unreadable magical text and ethereal blue wisps, set against a dark grey background with ornate gold borders characteristic of the game's fantasy aesthetic. This design exemplifies a quest or achievement scroll from the popular action role-playing game.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Achievement or quest scroll design from Genshin Impact with parchment texture and fantasy styling",
+    "image_info": {
+      "url": "https://i.ytimg.com/vi/r9Kr_2w4h78/maxresdefault.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_strange_parchment_puzzle_scroll_map.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 156241,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9353578762775174
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 95.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the search query and prompt, directly featuring 'Genshin Impact', 'scrolls', 'parchment', and a puzzle element. The parchment texture and fantasy styling are clearly visible. Clarity is excellent, and the Genshin Impact logo is a relevant brand identifier rather than an intrusive watermark. The overall quality is professional and well-composed for its intended purpose.",
+      "file_name": "genshin_impact_strange_parchment_puzzle_scroll_map.jpg",
+      "caption": "A promotional image or guide thumbnail for Genshin Impact, featuring the text 'ALL 4/4 SCROLLS STRANGE PARCHMENT PUZZLE' on the left side. The right side displays a section of a textured parchment map with red 'X' marks and arrows indicating a path or solution, characteristic of a quest or puzzle guide. The Genshin Impact logo is visible in the bottom right corner.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://64.media.tumblr.com/8ca6b71c30a5d7ccc6bca96fec09df52/12c3d1e74133f17f-be/s1280x1920/ae8dc04805a347fa71e81f2fe528a1e8d0fabdac.png",
+      "file_path": "/workspace/imgs/genshin_impact_ui_background_textures_fantasy_elements.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 515612,
+      "width": 1024,
+      "height": 1024,
+      "total_pixels": 1048576,
+      "basic_score": 0.9471893707594763
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image is highly relevant to the search query, providing a collection of UI elements and background textures that strongly match the Genshin Impact aesthetic. It includes various colored panels with fantasy-themed patterns, specifically gold/orange and multiple shades of blue/teal/purple that align with 'deep blue' elements. While not a single seamless background, it contains distinct texture panels that could be used seamlessly. The image is exceptionally clear, high-resolution, and free of watermarks.",
+      "file_name": "genshin_impact_ui_background_textures_fantasy_elements.png",
+      "caption": "A high-resolution sprite sheet showcasing various user interface (UI) elements and background textures inspired by the Genshin Impact aesthetic. The image features six large rectangular panels in shades of grey, teal, light blue, purple, gold/orange, and cream, each adorned with a subtle, stylized Celtic knot or triquetra pattern. Alongside these, there are smaller UI components including rectangular banners, leaf-shaped icons, and miscellaneous decorative elements in corresponding fantasy-inspired colors.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://64.media.tumblr.com/7b52efd0ed087b04fbfe81d6cbb69b0b/da8944758db163c5-bb/s1280x1920/42ad0f8ee528dc4649c5bb4c0d591a879b735ca5.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_fantasy_ui_background_blue_gold_mountains.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 143312,
+      "width": 1280,
+      "height": 553,
+      "total_pixels": 707840,
+      "basic_score": 0.8640222420201289
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 85.0,
+      "clarity_score": 95.0,
+      "watermark_score": 75.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the Genshin Impact aesthetic, featuring a beautiful fantasy landscape with deep blue and purple hues and elements that could be interpreted as gold/glowing. Its high quality makes it suitable for a UI background. However, it's a scenic image rather than a tileable 'texture,' and it contains a small watermark.",
+      "file_name": "genshin_impact_fantasy_ui_background_blue_gold_mountains.jpg",
+      "caption": "A breathtaking wide-angle landscape from Genshin Impact, depicting a mystical fantasy world bathed in deep blue and purple twilight. Towering, stylized mountains dominate the scene, intermingled with ancient, glowing structures that emit a soft, ethereal light. A starry sky twinkles above a ethereal mist, creating a magical atmosphere perfectly aligned with the game's aesthetic.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://i.redd.it/pelptavtb7n91.jpg",
+      "file_path": "/workspace/imgs/genshin_impact_ui_fantasy_landscape_blue_gold_sky.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 197613,
+      "width": 1920,
+      "height": 1080,
+      "total_pixels": 2073600,
+      "basic_score": 0.7251293551118825
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the requested 'Genshin Impact UI aesthetic' with its stylized fantasy landscape, deep blue sky, and subtle gold elements. The digital art is of very high quality, clear, and professional, making it ideal as a UI background. While not a repeating 'texture' in the strictest sense, it functions exceptionally well as a static background for UI.",
+      "file_name": "genshin_impact_ui_fantasy_landscape_blue_gold_sky.jpg",
+      "caption": "A stunning stylized digital painting of a vibrant fantasy landscape, highly reminiscent of the Genshin Impact art style. The scene features a prominent, ancient-looking tree with lush foliage, growing from an elevated or floating island adorned with small, quaint structures. The background is dominated by a deep blue sky with an ornate circular pattern and radiating golden light, complemented by elegant, stylized clouds. Rolling green mountains in various shades and a serene body of water complete the panoramic view, with several glowing braziers adding to the mystical ambiance in the foreground.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A seamless texture background that matches Genshin Impact's UI aesthetic with deep blue and gold fantasy elements",
+    "image_info": {
+      "url": "https://64.media.tumblr.com/58c0b9c88ed9d1941f97645be482e6d7/2ffb11633c4daf2b-94/s1280x1920/dbc7b4f632e1f8b0b5768486cd5403854eb2c76c.png",
+      "file_path": "/workspace/imgs/genshin_impact_ui_style_background_texture_teal_cream.jpg",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 304850,
+      "width": 1024,
+      "height": 512,
+      "total_pixels": 524288,
+      "basic_score": 0.8607020198333721
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image strongly matches the Genshin Impact UI aesthetic, featuring a clean, stylized background with subtle textures, layered elements, and fantasy motifs like swirling patterns and stars. While the blue is more teal/light blue and the 'gold' is closer to cream/beige than deep blue and true gold, the overall style and quality are excellent, making it highly suitable as a UI background texture.",
+      "file_name": "genshin_impact_ui_style_background_texture_teal_cream.jpg",
+      "caption": "A high-quality digital background featuring a layered, stylized design reminiscent of Genshin Impact's user interface. The left side showcases a subtle light beige or cream diamond pattern, transitioning into a vibrant teal or light blue section on the right with swirling wave-like patterns and small stars. A large, multi-layered circular element with a textured cream core and a smaller starburst design dominates the center-right, framed by curved lines in light beige and white. The overall aesthetic is clean, professional, and evokes a fantasy setting.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High-quality photos of famous travel destinations and landmarks around the world for a travel website",
+    "image_info": {
+      "url": "https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/m74dnj0pmpxan8owcgxp?_a=BACADKGT",
+      "file_path": "/workspace/imgs/great_sphinx_pyramid_giza_egypt_travel_landmark.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 88688,
+      "width": 1024,
+      "height": 683,
+      "total_pixels": 699392,
+      "basic_score": 0.9020105042329664
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "This image is perfectly relevant to the search query, featuring iconic world landmarks (the Sphinx and Pyramid of Giza) that are major travel destinations. The image is exceptionally clear, sharp, and well-composed, offering a high-quality visual suitable for a travel website. There are no watermarks. The inclusion of a person provides a sense of scale and human connection to the ancient site, enhancing its appeal for travel promotion.",
+      "file_name": "great_sphinx_pyramid_giza_egypt_travel_landmark.jpg",
+      "caption": "A lone figure walks through the desert landscape towards the majestic Great Sphinx and the Great Pyramid of Giza, iconic ancient wonders of the world, under a clear blue sky in Egypt. The scene captures the grandeur of these famous landmarks, inviting exploration and travel.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High-quality photos of famous travel destinations and landmarks around the world for a travel website",
+    "image_info": {
+      "url": "https://wise.com/imaginary-v2/b8f952e8fbfa8d2691e4954e417e7914.jpg",
+      "file_path": "/workspace/imgs/colosseum_rome_famous_landmark_travel_destination.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 213120,
+      "width": 1200,
+      "height": 550,
+      "total_pixels": 660000,
+      "basic_score": 0.8734836663878145
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt, depicting one of the most famous world landmarks. It is of high quality with excellent clarity, vibrant colors, good lighting, and a professional composition. There are no visible watermarks.",
+      "file_name": "colosseum_rome_famous_landmark_travel_destination.jpg",
+      "caption": "A wide-angle, vibrant photograph of the ancient Roman Colosseum in Rome, Italy, under a clear blue sky with white clouds. The iconic amphitheater is shown with its multiple levels of arches and a large crowd of tourists gathered in the foreground and surrounding area, highlighting its status as a popular global travel destination.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High-quality photos of famous travel destinations and landmarks around the world for a travel website",
+    "image_info": {
+      "url": "https://www.22places.com/wp-content/uploads/2025/03/pyramids-giza.jpg",
+      "file_path": "/workspace/imgs/Giza_Pyramids_Egypt_Desert_Travel_Landmark.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 146911,
+      "width": 1050,
+      "height": 700,
+      "total_pixels": 735000,
+      "basic_score": 0.9142171526022456
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant to the search query, depicting one of the most famous world landmarks and travel destinations. The clarity is excellent, showcasing sharp details of the pyramids and the surrounding desert. There are no watermarks. The composition is strong, providing a sense of scale with the two figures on horseback, and the overall quality is professional and highly suitable for a travel website.",
+      "file_name": "Giza_Pyramids_Egypt_Desert_Travel_Landmark.jpg",
+      "caption": "A stunning panoramic view of the ancient Giza Necropolis in Egypt, featuring the iconic Great Pyramids of Khufu, Khafre, and Menkaure rising majestically from the golden desert sands under a clear blue sky. Two distant figures on horseback traverse the foreground, adding a sense of scale and adventure to this historical world landmark.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High-quality photos of famous travel destinations and landmarks around the world for a travel website",
+    "image_info": {
+      "url": "https://www.usnews.com/object/image/00000169-5e06-df95-a57d-7ec6abfb0000/5-taj-mahal-getty.jpg?update-time=1706734280787&size=responsive640",
+      "file_path": "/workspace/imgs/taj_mahal_india_landmark_reflection_travel_destination.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 49489,
+      "width": 640,
+      "height": 420,
+      "total_pixels": 268800,
+      "basic_score": 0.7765003975888629
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant to the search query, featuring the iconic Taj Mahal, a world-famous landmark and travel destination. It boasts excellent clarity, sharpness, and professional composition with a prominent reflection. There are no watermarks, making it an ideal high-quality asset for a travel website.",
+      "file_name": "taj_mahal_india_landmark_reflection_travel_destination.jpg",
+      "caption": "The majestic Taj Mahal mausoleum in Agra, Uttar Pradesh, India, beautifully reflected in the symmetrical water channel of its charbagh garden. This UNESCO World Heritage site, a symbol of eternal love, is captured under a clear sky, showcasing its stunning white marble architecture and minarets amidst lush green lawns.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "High-quality photos of famous travel destinations and landmarks around the world for a travel website",
+    "image_info": {
+      "url": "https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/mptwrxyee9ry8ryohtdm",
+      "file_path": "/workspace/imgs/chichen_itza_el_castillo_mayan_pyramid_mexico_travel.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 146683,
+      "width": 1140,
+      "height": 760,
+      "total_pixels": 866400,
+      "basic_score": 0.9312537139799657
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, depicting a world-famous landmark and travel destination in high quality. The clarity is excellent, with sharp details and good lighting. There are no watermarks. The composition is well-balanced, making it ideal for a travel website.",
+      "file_name": "chichen_itza_el_castillo_mayan_pyramid_mexico_travel.jpg",
+      "caption": "A wide-angle view of the majestic El Castillo, also known as the Temple of Kukulcan, the iconic Mayan pyramid located at the archaeological site of Chichen Itza in Yucatán, Mexico. The ancient stone structure stands prominently on a vast green lawn under a partly cloudy blue sky, with visitors exploring the surrounding area, showcasing it as a popular global travel destination.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Beautiful natural landscape photos of mountains, beaches, and forests for travel website",
+    "image_info": {
+      "url": "https://www.shutterstock.com/image-photo/aerial-view-serene-beach-forest-600nw-2493821799.jpg",
+      "file_path": "/workspace/imgs/aerial_beach_forest_mountains_landscape.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 78911,
+      "width": 532,
+      "height": 600,
+      "total_pixels": 319200,
+      "basic_score": 0.7966356439041623
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, beautifully showcasing a natural landscape that includes a beach, forests, and distant mountains under a clear sky. Its high clarity, vibrant colors, and excellent aerial composition make it highly suitable for a travel website. No watermarks are present.",
+      "file_name": "aerial_beach_forest_mountains_landscape.jpg",
+      "caption": "An exquisite aerial view of a pristine natural landscape featuring a vivid turquoise ocean gently meeting a wide, white sandy beach. Behind the beach lies a lush strip of green coastal forest, which transitions into a vast expanse of drier, dense bushland. In the far background, several distinctive mountain peaks rise under a bright, clear blue sky, completing a picturesque scene ideal for a travel destination.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Beautiful natural landscape photos of mountains, beaches, and forests for travel website",
+    "image_info": {
+      "url": "https://www.nationalforests.org/assets/blog/2023/_1600x1600_fit_center-center_80_none/Siuslaw-NF_Cape-Perpetua_Jeff-Kramer.jpg",
+      "file_path": "/workspace/imgs/forested_coastline_highway_beach_ocean_landscape.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 363290,
+      "width": 1067,
+      "height": 1600,
+      "total_pixels": 1707200,
+      "basic_score": 0.802057564050924
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 88.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image is highly relevant to the search query and prompt, showcasing a beautiful natural landscape that includes forested mountains, a sandy beach, a rocky coastline, and the expansive ocean. The clarity is excellent, and there are no watermarks. The composition is professional and visually appealing, making it ideal for a travel website.",
+      "file_name": "forested_coastline_highway_beach_ocean_landscape.jpg",
+      "caption": "An elevated view of a majestic coastal landscape, featuring densely forested mountains and hillsides sloping down to a rugged beach with crashing waves. A winding highway hugs the shoreline, leading towards a sandy cove, with the vast blue ocean stretching out to the horizon under a clear sky.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Beautiful natural landscape photos of mountains, beaches, and forests for travel website",
+    "image_info": {
+      "url": "https://www.nationalforests.org/assets/header-images/_1200x630_crop_center-center_82_none/4520_-Lawler-Dan-Siuslaw-National-Forest-Cape-Perpetua.jpg?mtime=1694440358",
+      "file_path": "/workspace/imgs/coastal_sunset_landscape_rocky_beach_forest_mountain.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 185061,
+      "width": 1200,
+      "height": 630,
+      "total_pixels": 756000,
+      "basic_score": 0.9150659648306817
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "This image perfectly aligns with the search query and prompt, showcasing a stunning natural landscape that includes a rocky beach, crashing waves, a forested mountain, and a breathtaking sunset. The clarity, composition, and lighting are exceptional, making it ideal for a travel website. There are no watermarks.",
+      "file_name": "coastal_sunset_landscape_rocky_beach_forest_mountain.jpg",
+      "caption": "A breathtaking panoramic view of a dramatic sunset over a rugged coastal landscape. Golden sun rays burst from behind a dark, rocky headland, illuminating the vibrant sky with hues of orange, pink, and purple. In the foreground, dark, textured rocks, some adorned with bright green moss, frame the crashing waves of the ocean. A forested mountain or hillside rises majestically in the background, completing this picturesque scene that perfectly blends elements of beach, forest, and mountain.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos showing various travel activities like hiking, sightseeing, cultural experiences for website",
+    "image_info": {
+      "url": "https://image.vietnam.travel/sites/default/files/2019-04/outdoor%20activities%20vietnam%20tourism-9.jpg?v=1755674817",
+      "file_path": "/workspace/imgs/kayaking_adventure_travel_tropical_mountains.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 268088,
+      "width": 1120,
+      "height": 630,
+      "total_pixels": 705600,
+      "basic_score": 0.9195009549857757
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly aligns with the 'adventure outdoor activities' aspect of the search query and prompt. It's a high-quality, well-composed shot with excellent clarity, vibrant colors, and no watermarks. It evokes a strong sense of travel and exploration.",
+      "file_name": "kayaking_adventure_travel_tropical_mountains.jpg",
+      "caption": "View from behind of a person in a yellow kayak, wearing an orange life vest, paddling through calm green-blue water surrounded by majestic, lush green limestone karsts or islands. Other kayakers can be seen in the distance, indicating a group adventure activity in a beautiful tropical natural landscape under a bright sky.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos showing various travel activities like hiking, sightseeing, cultural experiences for website",
+    "image_info": {
+      "url": "https://images.huffingtonpost.com/2013-01-03-LasVegasskydive.jpg",
+      "file_path": "/workspace/imgs/tandem_skydiving_adventure_travel_activity.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 44867,
+      "width": 770,
+      "height": 513,
+      "total_pixels": 395010,
+      "basic_score": 0.8193007623107633
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly captures an adventurous outdoor travel activity (skydiving), aligning strongly with the 'adventure outdoor activities' part of the search query and the 'various travel activities' aspect of the prompt. The image is exceptionally clear, well-lit, and professionally composed, with no visible watermarks. The expressions of the participants convey excitement and enjoyment, making it a highly suitable image for a website promoting travel activities.",
+      "file_name": "tandem_skydiving_adventure_travel_activity.jpg",
+      "caption": "A thrilling shot of two individuals, an instructor and a participant, performing a tandem skydive against a clear blue sky, high above a vast landscape. Both are smiling and giving thumbs up, radiating excitement and the exhilaration of an extreme outdoor adventure travel experience.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos showing various travel activities like hiking, sightseeing, cultural experiences for website",
+    "image_info": {
+      "url": "https://www.webintravel.com/wp-content/uploads/2024/08/featured-Arival-Outdoor-Travel-Research-1066x440.png",
+      "file_path": "/workspace/imgs/couple-zip-lining-forest-adventure-activity.jpg",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 1116714,
+      "width": 1066,
+      "height": 440,
+      "total_pixels": 469040,
+      "basic_score": 0.8298262423282523
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant as it perfectly showcases an 'adventure outdoor activity' suitable for 'travel activities'. It features excellent clarity, vibrant colors, and a professional composition without any watermarks. It would be ideal for a website promoting travel and adventure.",
+      "file_name": "couple-zip-lining-forest-adventure-activity.jpg",
+      "caption": "Two people, seen from behind, are actively zip-lining through the air over a dense, lush green forest on a sunny day. They are wearing safety helmets and harnesses, experiencing an exhilarating outdoor adventure activity.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos showing various travel activities like hiking, sightseeing, cultural experiences for website",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5238f4e6e4b02e747c5476e2/1534176133795-EJZ3ZCPRGJTIRFZ0IP8W/hells+canyon+rafting+trip.jpg",
+      "file_path": "/workspace/imgs/two_women_hiking_adventure_trail_sunset.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 151924,
+      "width": 849,
+      "height": 566,
+      "total_pixels": 480534,
+      "basic_score": 0.8676018537408041
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is highly relevant, directly depicting a travel and outdoor activity (hiking) as requested. The clarity is excellent, with good lighting and composition, creating an adventurous and inviting atmosphere. There are no watermarks present, making it ideal for website use.",
+      "file_name": "two_women_hiking_adventure_trail_sunset.jpg",
+      "caption": "Two women, viewed from behind, wearing backpacks and hiking boots, traverse a narrow dirt trail through tall, vibrant green grass. The scene is bathed in the warm, golden light of a setting or rising sun, creating a serene and adventurous outdoor atmosphere. A tree branch partially frames the left side of the image, adding depth to the natural landscape.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos showing various travel activities like hiking, sightseeing, cultural experiences for website",
+    "image_info": {
+      "url": "https://www.usnews.com/object/image/00000169-6cf9-df95-a57d-7cfbd2e90000/190311outdooradventures-stock.jpg?update-time=1552314705709&size=responsive640",
+      "file_path": "/workspace/imgs/group-whitewater-rafting-adventure-river.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 66425,
+      "width": 640,
+      "height": 420,
+      "total_pixels": 268800,
+      "basic_score": 0.7789729497740645
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is highly relevant to the search query 'travel activities adventure outdoor activities' as it clearly depicts whitewater rafting. It is also suitable for the prompt's request for 'various travel activities' for a website, specifically fitting the adventure category. The image boasts excellent clarity, vibrant colors, professional composition, and contains no watermarks.",
+      "file_name": "group-whitewater-rafting-adventure-river.jpg",
+      "caption": "A dynamic, high-angle shot captures a group of people wearing red helmets and yellow life jackets actively paddling a blue raft through whitewater rapids on a sunny day. The scene is set on a scenic river, flanked by lush green mountains and forests under a clear blue sky, showcasing an exhilarating outdoor travel adventure.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos of unique and lesser-known travel destinations and hidden gems",
+    "image_info": {
+      "url": "https://m.media-amazon.com/images/I/51P6NfDPP4L.jpg_BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg",
+      "file_path": "/workspace/imgs/uncovering_hidden_gems_travel_guide_book_cover.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 259837,
+      "width": 1910,
+      "height": 1000,
+      "total_pixels": 1910000,
+      "basic_score": 0.7715890252606552
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 85.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is a book cover titled 'Uncovering Hidden Gems: A Comprehensive Travel Guide to Off-the-Beaten-Path Destinations', which is highly relevant to the search query and prompt. The text on the cover is perfectly clear and legible, and the overall image quality is excellent with no watermarks. While it's a photo of a book about destinations rather than a photo of a destination itself, it serves as a valuable resource for the query.",
+      "file_name": "uncovering_hidden_gems_travel_guide_book_cover.jpg",
+      "caption": "A clear image of the book cover for 'Uncovering Hidden Gems: A Comprehensive Travel Guide to Off-the-Beaten-Path Destinations in the United States' by Roonie D. Kissner. The cover features a scenic photograph of a picturesque coastal town with colorful buildings and boats docked in a bay.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos of unique and lesser-known travel destinations and hidden gems",
+    "image_info": {
+      "url": "https://media.licdn.com/dms/image/v2/D5612AQGB1Zz4zw_rbw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1701621566216?e=2147483647&v=beta&t=XoOTAkr_ypdW8-StUvmED2eLGj5iS44iUMcL-pfMwBM",
+      "file_path": "/workspace/imgs/hidden-gem-river-gorge-boat-exploration.jpg",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 895921,
+      "width": 1024,
+      "height": 683,
+      "total_pixels": 699392,
+      "basic_score": 0.934468036875137
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly captures the essence of a 'hidden gem' or 'off-beaten-path destination' with its serene and majestic natural landscape featuring a boat exploring a narrow river gorge. The clarity, composition, and professional quality are excellent, with no watermarks.",
+      "file_name": "hidden-gem-river-gorge-boat-exploration.jpg",
+      "caption": "A small boat gracefully navigates the emerald-green waters of a stunning river gorge, flanked by towering, rugged cliffs adorned with lush green trees, under a bright blue sky. This breathtaking natural landscape evokes a sense of discovery and adventure in a unique, off-the-beaten-path destination.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos of unique and lesser-known travel destinations and hidden gems",
+    "image_info": {
+      "url": "https://miro.medium.com/1*HKjJL74_AKQ8gWvHNhjkDg.jpeg",
+      "file_path": "/workspace/imgs/ilha_vila_franca_do_campo_azores_hidden_gem_aerial.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 228928,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.941917274685608
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, showcasing a unique and visually stunning 'hidden gem' destination. The aerial perspective emphasizes its off-the-beaten-path feel. Clarity is excellent with vibrant colors and sharp details, and there are no watermarks. Overall, it's a professional-quality image.",
+      "file_name": "ilha_vila_franca_do_campo_azores_hidden_gem_aerial.jpg",
+      "caption": "An aerial view of the stunning Ilhéu de Vila Franca do Campo, also known as Princess Ring Islet, off the coast of São Miguel Island in the Azores, Portugal. This volcanic islet features a near-perfect circular lagoon with a small central island, creating a unique natural swimming pool and a true hidden gem for travelers seeking off-the-beaten-path destinations. The surrounding Atlantic Ocean is a deep blue, contrasting with the lush green vegetation and rugged cliffs of the islet.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Photos of unique and lesser-known travel destinations and hidden gems",
+    "image_info": {
+      "url": "https://m.media-amazon.com/images/I/718bXqMQg6L._UF1000,1000_QL80_.jpg",
+      "file_path": "/workspace/imgs/uncovering_hidden_gems_travel_guide_book_cover.jpg_b9",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 97920,
+      "width": 667,
+      "height": 1000,
+      "total_pixels": 667000,
+      "basic_score": 0.8825219155314173
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 65.0,
+      "watermark_score": 100.0,
+      "overall_score": 65.0,
+      "explanation": "The image is highly relevant to the search query and prompt as it is a book cover explicitly titled 'Uncovering Hidden Gems: A Comprehensive Travel Guide to Off-the-Beaten-Path Destinations'. While the resolution is decent, a prominent vertical white line artifact significantly detracts from the image's clarity and overall professional quality. There are no watermarks.",
+      "file_name": "uncovering_hidden_gems_travel_guide_book_cover.jpg",
+      "caption": "A photograph of the book cover for 'Uncovering Hidden Gems: A Comprehensive Travel Guide to Off-the-Beaten-Path Destinations in the United States' by Roonie D. Kissner. The cover features an overhead view of a colorful, picturesque coastal town nestled by a calm blue bay dotted with small boats, set against a backdrop of hills, emblematic of unique and lesser-known travel destinations.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Urban travel destination photos and city skylines for travel website",
+    "image_info": {
+      "url": "https://i0.wp.com/themarissadaily.com/wp-content/uploads/2021/12/Featured-Image-for-Blog.png?fit=720%2C405&ssl=1",
+      "file_path": "/workspace/imgs/new_york_city_urban_travel_collage_skyline.jpg",
+      "img_format": "PNG",
+      "mode": "RGB",
+      "file_size": 619014,
+      "width": 720,
+      "height": 405,
+      "total_pixels": 291600,
+      "basic_score": 0.828982459008067
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 88.0,
+      "explanation": "The image is highly relevant to the search query and prompt, showcasing iconic urban travel destinations and a city skyline. The composite nature effectively presents multiple facets of a major city. Clarity is good, and there are no watermarks. The overall quality is strong and suitable for a travel website, despite the visible seams between the panels.",
+      "file_name": "new_york_city_urban_travel_collage_skyline.jpg",
+      "caption": "A vibrant triptych collage featuring iconic New York City urban travel destinations: the historic Brooklyn Bridge with pedestrians, a sprawling Manhattan cityscape and skyline from a high vantage point, and the dazzling, billboard-filled Times Square.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]

@@ -1,0 +1,314 @@
+{
+  "destinations": [
+    {
+      "id": "giza-pyramids",
+      "name": "Great Pyramids of Giza",
+      "description": "Ancient wonders of the world rising from golden desert sands",
+      "category": "attractions",
+      "coordinates": [29.9773, 31.1325],
+      "rating": 4.8,
+      "price": "$$",
+      "images": [
+        "/images/great_sphinx_pyramid_giza_egypt_travel_landmark.jpg",
+        "/images/Giza_Pyramids_Egypt_Desert_Travel_Landmark.jpg"
+      ],
+      "bestTime": "October to April",
+      "cost": "$50-100 per day",
+      "language": "Arabic, English",
+      "topActivities": [
+        "Pyramid exploration",
+        "Sphinx photography",
+        "Camel rides",
+        "Sound and light show"
+      ],
+      "nearbySpots": ["cairo-museum", "islamic-cairo"]
+    },
+    {
+      "id": "taj-mahal",
+      "name": "Taj Mahal",
+      "description": "Magnificent marble mausoleum and symbol of eternal love",
+      "category": "attractions",
+      "coordinates": [27.1751, 78.0421],
+      "rating": 4.9,
+      "price": "$",
+      "images": [
+        "/images/taj_mahal_india_landmark_reflection_travel_destination.jpg"
+      ],
+      "bestTime": "October to March",
+      "cost": "$30-60 per day",
+      "language": "Hindi, English",
+      "topActivities": [
+        "Sunrise photography",
+        "Garden walks",
+        "Architecture tours",
+        "Local craft shopping"
+      ],
+      "nearbySpots": ["agra-fort", "mehtab-bagh"]
+    },
+    {
+      "id": "colosseum-rome",
+      "name": "Colosseum",
+      "description": "Iconic Roman amphitheater showcasing ancient history",
+      "category": "attractions",
+      "coordinates": [41.8902, 12.4922],
+      "rating": 4.7,
+      "price": "$$",
+      "images": [
+        "/images/colosseum_rome_famous_landmark_travel_destination.jpg"
+      ],
+      "bestTime": "April to June, September to October",
+      "cost": "$100-150 per day",
+      "language": "Italian, English",
+      "topActivities": [
+        "Underground tours",
+        "Historical walks",
+        "Roman Forum visits",
+        "Photography"
+      ],
+      "nearbySpots": ["roman-forum", "palatine-hill"]
+    },
+    {
+      "id": "chichen-itza",
+      "name": "Chichen Itza",
+      "description": "Majestic Mayan pyramid showcasing ancient civilization",
+      "category": "attractions",
+      "coordinates": [20.6843, -88.5678],
+      "rating": 4.6,
+      "price": "$",
+      "images": [
+        "/images/chichen_itza_el_castillo_mayan_pyramid_mexico_travel.jpg"
+      ],
+      "bestTime": "November to April",
+      "cost": "$40-80 per day",
+      "language": "Spanish, English",
+      "topActivities": [
+        "Pyramid climbing",
+        "Archaeological tours",
+        "Cenote swimming",
+        "Cultural shows"
+      ],
+      "nearbySpots": ["cenote-ik-kil", "valladolid"]
+    },
+    {
+      "id": "norwegian-fjords",
+      "name": "Norwegian Fjords",
+      "description": "Breathtaking natural landscapes with dramatic waterfalls",
+      "category": "natural",
+      "coordinates": [62.1734, 7.1891],
+      "rating": 4.9,
+      "price": "$$$",
+      "images": [
+        "/images/coastal_sunset_landscape_rocky_beach_forest_mountain.jpg",
+        "/images/forested_coastline_highway_beach_ocean_landscape.jpg"
+      ],
+      "bestTime": "May to September",
+      "cost": "$200-300 per day",
+      "language": "Norwegian, English",
+      "topActivities": [
+        "Fjord cruises",
+        "Hiking trails",
+        "Waterfall viewing",
+        "Northern lights (winter)"
+      ],
+      "nearbySpots": ["geiranger", "flam"]
+    },
+    {
+      "id": "tropical-paradise",
+      "name": "Tropical Paradise",
+      "description": "Pristine beaches with crystal clear waters and lush forests",
+      "category": "natural",
+      "coordinates": [-8.3405, 115.0920],
+      "rating": 4.8,
+      "price": "$$",
+      "images": [
+        "/images/aerial_beach_forest_mountains_landscape.jpg"
+      ],
+      "bestTime": "April to October",
+      "cost": "$60-120 per day",
+      "language": "Indonesian, English",
+      "topActivities": [
+        "Beach relaxation",
+        "Snorkeling",
+        "Jungle trekking",
+        "Cultural tours"
+      ],
+      "nearbySpots": ["volcano-hike", "temple-complex"]
+    },
+    {
+      "id": "kayaking-adventure",
+      "name": "Tropical Kayaking Paradise",
+      "description": "Explore limestone karsts and emerald waters by kayak",
+      "category": "adventure",
+      "coordinates": [20.9101, 106.8817],
+      "rating": 4.7,
+      "price": "$",
+      "images": [
+        "/images/kayaking_adventure_travel_tropical_mountains.jpg"
+      ],
+      "bestTime": "March to May, September to November",
+      "cost": "$40-70 per day",
+      "language": "Vietnamese, English",
+      "topActivities": [
+        "Kayaking tours",
+        "Cave exploration",
+        "Photography",
+        "Local fishing"
+      ],
+      "nearbySpots": ["floating-village", "sunset-point"]
+    },
+    {
+      "id": "skydiving-adventure",
+      "name": "Ultimate Skydiving Experience",
+      "description": "Tandem skydiving with breathtaking aerial views",
+      "category": "adventure",
+      "coordinates": [36.1699, -115.1398],
+      "rating": 4.9,
+      "price": "$$$",
+      "images": [
+        "/images/tandem_skydiving_adventure_travel_activity.jpg"
+      ],
+      "bestTime": "Year-round",
+      "cost": "$150-250 per day",
+      "language": "English",
+      "topActivities": [
+        "Tandem skydiving",
+        "Solo jumps",
+        "Photography packages",
+        "Ground training"
+      ],
+      "nearbySpots": ["desert-tours", "strip-visit"]
+    },
+    {
+      "id": "forest-zipline",
+      "name": "Forest Canopy Adventure",
+      "description": "Zip-line through lush forest canopies",
+      "category": "adventure",
+      "coordinates": [9.7489, -83.7534],
+      "rating": 4.6,
+      "price": "$$",
+      "images": [
+        "/images/couple-zip-lining-forest-adventure-activity.jpg"
+      ],
+      "bestTime": "December to April",
+      "cost": "$80-120 per day",
+      "language": "Spanish, English",
+      "topActivities": [
+        "Zip-lining",
+        "Wildlife spotting",
+        "Canopy walks",
+        "Photography tours"
+      ],
+      "nearbySpots": ["cloud-forest", "wildlife-refuge"]
+    },
+    {
+      "id": "river-rafting",
+      "name": "Whitewater Rafting Adventure",
+      "description": "Thrilling rapids through pristine mountain scenery",
+      "category": "adventure",
+      "coordinates": [39.7392, -107.7319],
+      "rating": 4.8,
+      "price": "$$",
+      "images": [
+        "/images/group-whitewater-rafting-adventure-river.jpg"
+      ],
+      "bestTime": "May to September",
+      "cost": "$100-150 per day",
+      "language": "English",
+      "topActivities": [
+        "Whitewater rafting",
+        "Scenic floats",
+        "Camping",
+        "Fishing"
+      ],
+      "nearbySpots": ["mountain-hiking", "hot-springs"]
+    },
+    {
+      "id": "hiking-sunset",
+      "name": "Golden Hour Hiking Trail",
+      "description": "Scenic hiking trails with stunning sunset views",
+      "category": "adventure",
+      "coordinates": [44.4280, -110.5885],
+      "rating": 4.7,
+      "price": "$",
+      "images": [
+        "/images/two_women_hiking_adventure_trail_sunset.jpg"
+      ],
+      "bestTime": "June to September",
+      "cost": "$50-80 per day",
+      "language": "English",
+      "topActivities": [
+        "Hiking",
+        "Photography",
+        "Wildlife viewing",
+        "Camping"
+      ],
+      "nearbySpots": ["geysers", "wildlife-area"]
+    },
+    {
+      "id": "azores-hidden-gem",
+      "name": "Princess Ring Islet",
+      "description": "Unique circular lagoon creating a natural swimming pool",
+      "category": "hidden-gems",
+      "coordinates": [37.7128, -25.4315],
+      "rating": 4.9,
+      "price": "$$",
+      "images": [
+        "/images/ilha_vila_franca_do_campo_azores_hidden_gem_aerial.jpg"
+      ],
+      "bestTime": "June to September",
+      "cost": "$70-110 per day",
+      "language": "Portuguese, English",
+      "topActivities": [
+        "Swimming",
+        "Snorkeling",
+        "Photography",
+        "Boat tours"
+      ],
+      "nearbySpots": ["sao-miguel", "thermal-springs"]
+    },
+    {
+      "id": "river-gorge-exploration",
+      "name": "Hidden River Gorge",
+      "description": "Secluded river gorge perfect for peaceful exploration",
+      "category": "hidden-gems",
+      "coordinates": [45.3311, -121.7113],
+      "rating": 4.6,
+      "price": "$",
+      "images": [
+        "/images/hidden-gem-river-gorge-boat-exploration.jpg"
+      ],
+      "bestTime": "April to October",
+      "cost": "$40-70 per day",
+      "language": "English",
+      "topActivities": [
+        "Boat tours",
+        "Photography",
+        "Fishing",
+        "Rock climbing"
+      ],
+      "nearbySpots": ["waterfall-hike", "forest-trail"]
+    },
+    {
+      "id": "nyc-urban",
+      "name": "New York City",
+      "description": "The city that never sleeps with iconic landmarks",
+      "category": "attractions",
+      "coordinates": [40.7128, -74.0060],
+      "rating": 4.8,
+      "price": "$$$",
+      "images": [
+        "/images/new_york_city_urban_travel_collage_skyline.jpg"
+      ],
+      "bestTime": "April to June, September to November",
+      "cost": "$200-350 per day",
+      "language": "English",
+      "topActivities": [
+        "Times Square",
+        "Central Park",
+        "Brooklyn Bridge",
+        "Broadway shows"
+      ],
+      "nearbySpots": ["statue-liberty", "empire-state"]
+    }
+  ]
+}

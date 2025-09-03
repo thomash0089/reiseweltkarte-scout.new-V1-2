@@ -1,0 +1,30 @@
+{
+  "anemoculi": [
+    { "id": 1, "position": [41.5081, -81.6044], "region": "Mondstadt", "location": "Windrise", "description": "High up in the tree branches", "collected": false, "element": "anemo" },
+    { "id": 2, "position": [41.4993, -81.6955], "region": "Mondstadt", "location": "Falcon Coast", "description": "Floating above cliff edge", "collected": false, "element": "anemo" },
+    { "id": 3, "position": [41.5285, -81.5932], "region": "Mondstadt", "location": "Brightcrown Canyon", "description": "Inside ancient ruins", "collected": false, "element": "anemo" },
+    { "id": 4, "position": [41.4858, -81.6782], "region": "Mondstadt", "location": "Stormbearer Point", "description": "At the tower top", "collected": false, "element": "anemo" },
+    { "id": 5, "position": [41.5156, -81.6234], "region": "Mondstadt", "location": "Thousand Winds Temple", "description": "Center of the temple", "collected": false, "element": "anemo" }
+  ],
+  "geoculi": [
+    { "id": 6, "position": [40.7589, -74.0060], "region": "Liyue", "location": "Guili Plains", "description": "Atop stone pillar", "collected": false, "element": "geo" },
+    { "id": 7, "position": [40.7282, -74.0776], "region": "Liyue", "location": "Mt. Aozang", "description": "Hidden in cave", "collected": false, "element": "geo" },
+    { "id": 8, "position": [40.7831, -73.9712], "region": "Liyue", "location": "Guyun Stone Forest", "description": "Between rock spires", "collected": false, "element": "geo" },
+    { "id": 9, "position": [40.7505, -74.0445], "region": "Liyue", "location": "Huaguang Stone Forest", "description": "On floating island", "collected": false, "element": "geo" },
+    { "id": 10, "position": [40.6892, -74.0445], "region": "Liyue", "location": "Qingce Village", "description": "Near bamboo grove", "collected": false, "element": "geo" }
+  ],
+  "electroculi": [
+    { "id": 11, "position": [35.6762, 139.6503], "region": "Inazuma", "location": "Narukami Island", "description": "Sacred Sakura tree", "collected": false, "element": "electro" },
+    { "id": 12, "position": [35.6895, 139.6917], "region": "Inazuma", "location": "Mt. Yougou", "description": "Lightning-struck shrine", "collected": false, "element": "electro" },
+    { "id": 13, "position": [35.7090, 139.7319], "region": "Inazuma", "location": "Kannazuka", "description": "Mikage Furnace vicinity", "collected": false, "element": "electro" },
+    { "id": 14, "position": [35.6585, 139.7454], "region": "Inazuma", "location": "Yashiori Island", "description": "Serpent's Head", "collected": false, "element": "electro" },
+    { "id": 15, "position": [35.6272, 139.7794], "region": "Inazuma", "location": "Seirai Island", "description": "Thunder Manifestation arena", "collected": false, "element": "electro" }
+  ],
+  "dendroculi": [
+    { "id": 16, "position": [23.8103, 90.4125], "region": "Sumeru", "location": "Avidya Forest", "description": "Ancient tree hollow", "collected": false, "element": "dendro" },
+    { "id": 17, "position": [23.8859, 90.3964], "region": "Sumeru", "location": "Lokapala Jungle", "description": "Canopy bridge", "collected": false, "element": "dendro" },
+    { "id": 18, "position": [23.7644, 90.3656], "region": "Sumeru", "location": "Mawtiyima Forest", "description": "Withering zone center", "collected": false, "element": "dendro" },
+    { "id": 19, "position": [23.8103, 90.4125], "region": "Sumeru", "location": "Vanarana", "description": "Dream tree roots", "collected": false, "element": "dendro" },
+    { "id": 20, "position": [23.6850, 90.3563], "region": "Sumeru", "location": "Desert of Hadramaveth", "description": "Oasis palm tree", "collected": false, "element": "dendro" }
+  ]
+}

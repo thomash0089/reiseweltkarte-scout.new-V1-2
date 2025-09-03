@@ -1,0 +1,95 @@
+{
+  "popularRoutes": [
+    {
+      "id": 1,
+      "name": "Daily Mining Route - Mondstadt",
+      "description": "Optimal route for collecting Crystal Chunks and Iron Ore in Mondstadt",
+      "estimatedTime": "15 minutes",
+      "type": "mining",
+      "difficulty": "Easy",
+      "waypoints": [
+        { "position": [41.5081, -81.5844], "name": "Start: Mondstadt City", "description": "Begin at the city gate" },
+        { "position": [41.5285, -81.5932], "name": "Springvale Mining", "description": "Mine Crystal Chunks near hunter lodge" },
+        { "position": [41.4993, -81.6955], "name": "Dadaupa Gorge", "description": "Large White Iron deposit" },
+        { "position": [41.5421, -81.6654], "name": "Stormbearer Mountains", "description": "High-altitude Crystal Chunks" },
+        { "position": [41.4858, -81.6782], "name": "Starfell Lake", "description": "Iron Ore around the lake" }
+      ],
+      "materials": [
+        { "name": "Crystal Chunk", "expectedQuantity": 20 },
+        { "name": "White Iron Chunk", "expectedQuantity": 35 },
+        { "name": "Iron Chunk", "expectedQuantity": 50 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Anemoculus Collection Route",
+      "description": "Complete path to collect all Anemoculi in Mondstadt region",
+      "estimatedTime": "2 hours",
+      "type": "oculi", 
+      "difficulty": "Medium",
+      "waypoints": [
+        { "position": [41.5081, -81.5844], "name": "Mondstadt City", "description": "Cathedral rooftop Anemoculus" },
+        { "position": [41.5081, -81.6044], "name": "Windrise", "description": "Tree canopy collection" },
+        { "position": [41.5285, -81.5932], "name": "Brightcrown Canyon", "description": "Ancient ruins exploration" },
+        { "position": [41.4858, -81.6782], "name": "Stormbearer Point", "description": "Tower summit ascent" },
+        { "position": [41.5156, -81.6234], "name": "Thousand Winds Temple", "description": "Temple center collection" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Liyue Harbor Material Run",
+      "description": "Efficient farming route for Liyue specialty materials",
+      "estimatedTime": "25 minutes",
+      "type": "materials",
+      "difficulty": "Easy",
+      "waypoints": [
+        { "position": [40.7128, -74.0060], "name": "Liyue Harbor", "description": "Start at teleport waypoint" },
+        { "position": [40.7589, -74.0060], "name": "Wangshu Inn", "description": "Silk Flower collection" },
+        { "position": [40.7282, -74.0776], "name": "Qingce Village", "description": "Violetgrass and Glazed Lily" },
+        { "position": [40.7831, -73.9712], "name": "Guyun Stone Forest", "description": "Cor Lapis mining" },
+        { "position": [40.6892, -74.0445], "name": "Mt. Tianheng", "description": "Additional Cor Lapis spots" }
+      ],
+      "materials": [
+        { "name": "Silk Flower", "expectedQuantity": 18 },
+        { "name": "Violetgrass", "expectedQuantity": 15 },
+        { "name": "Glazed Lily", "expectedQuantity": 12 },
+        { "name": "Cor Lapis", "expectedQuantity": 25 }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Inazuma Electroculus Hunt",
+      "description": "Comprehensive route for all Electroculi in Inazuma",
+      "estimatedTime": "3 hours",
+      "type": "oculi",
+      "difficulty": "Hard",
+      "waypoints": [
+        { "position": [35.6762, 139.6503], "name": "Ritou", "description": "Starting point in Inazuma" },
+        { "position": [35.6895, 139.6917], "name": "Grand Narukami Shrine", "description": "Sacred Sakura area" },
+        { "position": [35.7090, 139.7319], "name": "Kannazuka", "description": "Mikage Furnace vicinity" },
+        { "position": [35.6585, 139.7454], "name": "Yashiori Island", "description": "Serpent's Head exploration" },
+        { "position": [35.6272, 139.7794], "name": "Seirai Island", "description": "Thunder Manifestation area" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sumeru Desert Exploration",
+      "description": "Discovery route through the vast Sumeru desert regions", 
+      "estimatedTime": "45 minutes",
+      "type": "exploration",
+      "difficulty": "Medium",
+      "waypoints": [
+        { "position": [23.8103, 90.4125], "name": "Sumeru City", "description": "Begin desert expedition" },
+        { "position": [23.6850, 90.3563], "name": "Aaru Village", "description": "Desert oasis settlement" },
+        { "position": [23.7200, 90.3800], "name": "Desert Ruins", "description": "Ancient pyramid complex" },
+        { "position": [23.6500, 90.3200], "name": "Hidden Oasis", "description": "Secret water source" }
+      ],
+      "materials": [
+        { "name": "Scarab", "expectedQuantity": 30 },
+        { "name": "Desert Glass", "expectedQuantity": 20 },
+        { "name": "Dendrobium", "expectedQuantity": 15 }
+      ]
+    }
+  ],
+  "userRoutes": []
+}

@@ -1,0 +1,32 @@
+{
+  "plants": [
+    { "id": 1, "position": [41.5081, -81.6044], "type": "Valberry", "region": "Mondstadt", "location": "Stormbearer Mountains", "quantity": 3, "respawnHours": 48 },
+    { "id": 2, "position": [41.4993, -81.6955], "type": "Windwheel Aster", "region": "Mondstadt", "location": "Falcon Coast", "quantity": 2, "respawnHours": 48 },
+    { "id": 3, "position": [41.5285, -81.5932], "type": "Cecilia", "region": "Mondstadt", "location": "Starsnatch Cliff", "quantity": 4, "respawnHours": 48 },
+    { "id": 4, "position": [41.4858, -81.6782], "type": "Philanemo Mushroom", "region": "Mondstadt", "location": "Springvale Houses", "quantity": 6, "respawnHours": 72 },
+    { "id": 5, "position": [40.7589, -74.0060], "type": "Silk Flower", "region": "Liyue", "location": "Wangshu Inn", "quantity": 5, "respawnHours": 48 },
+    { "id": 6, "position": [40.7282, -74.0776], "type": "Violetgrass", "region": "Liyue", "location": "Qingce Village Cliffs", "quantity": 3, "respawnHours": 48 },
+    { "id": 7, "position": [40.7831, -73.9712], "type": "Glazed Lily", "region": "Liyue", "location": "Qingce Village Pond", "quantity": 2, "respawnHours": 48 },
+    { "id": 8, "position": [40.7505, -74.0445], "type": "Cor Lapis", "region": "Liyue", "location": "Mt. Hulao", "quantity": 4, "respawnHours": 72 },
+    { "id": 9, "position": [35.6762, 139.6503], "type": "Naku Weed", "region": "Inazuma", "location": "Narukami Island", "quantity": 8, "respawnHours": 48 },
+    { "id": 10, "position": [35.6895, 139.6917], "type": "Sakura Bloom", "region": "Inazuma", "location": "Grand Narukami Shrine", "quantity": 6, "respawnHours": 48 },
+    { "id": 11, "position": [23.8103, 90.4125], "type": "Nilotpala Lotus", "region": "Sumeru", "location": "Avidya Forest", "quantity": 3, "respawnHours": 48 },
+    { "id": 12, "position": [23.8859, 90.3964], "type": "Kalpalata Lotus", "region": "Sumeru", "location": "Lokapala Jungle", "quantity": 5, "respawnHours": 48 }
+  ],
+  "ores": [
+    { "id": 13, "position": [41.5081, -81.6044], "type": "Crystal Chunk", "region": "Mondstadt", "location": "Stormbearer Point", "quantity": 4, "respawnHours": 72 },
+    { "id": 14, "position": [41.4993, -81.6955], "type": "White Iron Chunk", "region": "Mondstadt", "location": "Dadaupa Gorge", "quantity": 6, "respawnHours": 72 },
+    { "id": 15, "position": [41.5285, -81.5932], "type": "Iron Chunk", "region": "Mondstadt", "location": "Wolvendom", "quantity": 8, "respawnHours": 24 },
+    { "id": 16, "position": [40.7589, -74.0060], "type": "Noctilucous Jade", "region": "Liyue", "location": "Mingyun Village", "quantity": 3, "respawnHours": 72 },
+    { "id": 17, "position": [40.7282, -74.0776], "type": "Electro Crystal", "region": "Liyue", "location": "Qingxu Pool", "quantity": 5, "respawnHours": 48 },
+    { "id": 18, "position": [40.7831, -73.9712], "type": "Crystal Chunk", "region": "Liyue", "location": "Guyun Stone Forest", "quantity": 12, "respawnHours": 72 },
+    { "id": 19, "position": [35.6762, 139.6503], "type": "Amethyst Lump", "region": "Inazuma", "location": "Tatarasuna", "quantity": 7, "respawnHours": 72 },
+    { "id": 20, "position": [35.6895, 139.6917], "type": "Electro Crystal", "region": "Inazuma", "location": "Kannazuka", "quantity": 9, "respawnHours": 48 }
+  ],
+  "animals": [
+    { "id": 21, "position": [41.5081, -81.6044], "type": "Boar", "region": "Mondstadt", "location": "Springvale", "drops": ["Raw Meat", "Chilled Meat"], "quantity": 3, "respawnHours": 12 },
+    { "id": 22, "position": [41.4993, -81.6955], "type": "Crystal Butterfly", "region": "Mondstadt", "location": "Dawn Winery", "drops": ["Crystal Core"], "quantity": 2, "respawnHours": 24 },
+    { "id": 23, "position": [40.7589, -74.0060], "type": "Crab", "region": "Liyue", "location": "Yaoguang Shoal", "drops": ["Crab", "Crab Roe"], "quantity": 5, "respawnHours": 24 },
+    { "id": 24, "position": [35.6762, 139.6503], "type": "Electro Hypostasis", "region": "Inazuma", "location": "Narukami Island", "drops": ["Lightning Prism", "Electro Crystal"], "quantity": 1, "respawnHours": 168 }
+  ]
+}

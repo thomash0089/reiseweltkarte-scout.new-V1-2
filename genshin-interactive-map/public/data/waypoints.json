@@ -1,0 +1,32 @@
+{
+  "waypoints": [
+    { "id": 1, "position": [41.5081, -81.5844], "region": "Mondstadt", "name": "Mondstadt City", "unlocked": true },
+    { "id": 2, "position": [41.4725, -81.6397], "region": "Mondstadt", "name": "Dawn Winery", "unlocked": true },
+    { "id": 3, "position": [41.5285, -81.5932], "region": "Mondstadt", "name": "Springvale", "unlocked": true },
+    { "id": 4, "position": [41.4858, -81.6782], "region": "Mondstadt", "name": "Starfell Lake", "unlocked": true },
+    { "id": 5, "position": [41.5421, -81.6654], "region": "Mondstadt", "name": "Stormbearer Mountains", "unlocked": true },
+    { "id": 6, "position": [40.7128, -74.0060], "region": "Liyue", "name": "Liyue Harbor", "unlocked": true },
+    { "id": 7, "position": [40.7589, -74.0060], "region": "Liyue", "name": "Guili Plains", "unlocked": true },
+    { "id": 8, "position": [40.7282, -74.0776], "region": "Liyue", "name": "Wangshu Inn", "unlocked": true },
+    { "id": 9, "position": [40.7831, -73.9712], "region": "Liyue", "name": "Guyun Stone Forest", "unlocked": true },
+    { "id": 10, "position": [40.6892, -74.0445], "region": "Liyue", "name": "Qingce Village", "unlocked": true },
+    { "id": 11, "position": [35.6762, 139.6503], "region": "Inazuma", "name": "Ritou", "unlocked": true },
+    { "id": 12, "position": [35.6895, 139.6917], "region": "Inazuma", "name": "Grand Narukami Shrine", "unlocked": true },
+    { "id": 13, "position": [35.7090, 139.7319], "region": "Inazuma", "name": "Konda Village", "unlocked": true },
+    { "id": 14, "position": [35.6585, 139.7454], "region": "Inazuma", "name": "Musoujin Gorge", "unlocked": false },
+    { "id": 15, "position": [35.6272, 139.7794], "region": "Inazuma", "name": "Seirai Island", "unlocked": false },
+    { "id": 16, "position": [23.8103, 90.4125], "region": "Sumeru", "name": "Sumeru City", "unlocked": true },
+    { "id": 17, "position": [23.8859, 90.3964], "region": "Sumeru", "name": "Gandharva Ville", "unlocked": true },
+    { "id": 18, "position": [23.7644, 90.3656], "region": "Sumeru", "name": "Pardis Dhyai", "unlocked": true },
+    { "id": 19, "position": [23.6850, 90.3563], "region": "Sumeru", "name": "Aaru Village", "unlocked": false },
+    { "id": 20, "position": [48.8566, 2.3522], "region": "Fontaine", "name": "Court of Fontaine", "unlocked": false }
+  ],
+  "statues": [
+    { "id": 21, "position": [41.5081, -81.6044], "region": "Mondstadt", "name": "Windrise Statue", "element": "anemo", "level": 10 },
+    { "id": 22, "position": [41.5285, -81.6932], "region": "Mondstadt", "name": "Brightcrown Canyon Statue", "element": "anemo", "level": 8 },
+    { "id": 23, "position": [40.7589, -74.0060], "region": "Liyue", "name": "Dihua Marsh Statue", "element": "geo", "level": 10 },
+    { "id": 24, "position": [40.7831, -73.9712], "region": "Liyue", "name": "Mt. Tianheng Statue", "element": "geo", "level": 9 },
+    { "id": 25, "position": [35.6895, 139.6917], "region": "Inazuma", "name": "Grand Narukami Shrine Statue", "element": "electro", "level": 7 },
+    { "id": 26, "position": [23.8103, 90.4125], "region": "Sumeru", "name": "Vanarana Statue", "element": "dendro", "level": 5 }
+  ]
+}
