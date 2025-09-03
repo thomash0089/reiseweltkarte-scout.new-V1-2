@@ -7,16 +7,19 @@ interface MapComponentProps {
   destinations: Destination[];
   selectedDestination: Destination | null;
   onDestinationSelect: (destination: Destination) => void;
+  mapLabelLanguage: 'en' | 'de' | 'local';
 }
 
 const MapComponent: React.FC<MapComponentProps> = ({
   destinations,
   selectedDestination,
-  onDestinationSelect
+  onDestinationSelect,
+  mapLabelLanguage
 }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
+  const baseLayerRef = useRef<L.TileLayer | null>(null);
 
   // Category colors for markers
   const categoryColors = {
@@ -28,7 +31,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
   // Create custom marker icon
   const createMarkerIcon = (category: string, isSelected: boolean = false) => {
-    const color = categoryColors[category as keyof typeof categoryColors] || '#6b7280';
+    const color = (categoryColors as any)[category] || '#6b7280';
     const size = isSelected ? 35 : 25;
     
     return L.divIcon({
@@ -75,12 +78,34 @@ const MapComponent: React.FC<MapComponentProps> = ({
     }
   };
 
+  const createBaseLayer = (lang: 'en' | 'de' | 'local') => {
+    if (lang === 'de') {
+      return L.tileLayer('https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors | Style: OpenStreetMap DE',
+        maxZoom: 19,
+        detectRetina: true
+      });
+    }
+    if (lang === 'en') {
+      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+        subdomains: 'abcd',
+        maxZoom: 20,
+        detectRetina: true
+      });
+    }
+    return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 19,
+      detectRetina: true
+    });
+  };
+
   // Initialize map
   useEffect(() => {
     if (mapRef.current && !mapInstanceRef.current) {
-      // Create map
       const map = L.map(mapRef.current, {
-        center: [20, 0], // Center on world
+        center: [20, 0],
         zoom: 2,
         minZoom: 2,
         maxZoom: 18,
@@ -90,17 +115,14 @@ const MapComponent: React.FC<MapComponentProps> = ({
         dragging: true
       });
 
-      // Add tile layer
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 18,
-      }).addTo(map);
+      // Initial base layer
+      const base = createBaseLayer(mapLabelLanguage);
+      base.addTo(map);
+      baseLayerRef.current = base;
 
       // Add fullscreen control
       const FullscreenControl = L.Control.extend({
-        options: {
-          position: 'topleft'
-        },
+        options: { position: 'topleft' },
         onAdd: function() {
           const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
           div.innerHTML = `
@@ -109,7 +131,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
               ⛶️
             </a>
           `;
-          
           div.onclick = (e) => {
             e.preventDefault();
             if (document.fullscreenElement) {
@@ -118,17 +139,14 @@ const MapComponent: React.FC<MapComponentProps> = ({
               mapRef.current?.requestFullscreen();
             }
           };
-          
           return div;
         }
       });
-      new FullscreenControl().addTo(map);
+      new (FullscreenControl as any)().addTo(map);
 
       // Add geolocation control
       const GeolocationControl = L.Control.extend({
-        options: {
-          position: 'topleft'
-        },
+        options: { position: 'topleft' },
         onAdd: function() {
           const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
           div.innerHTML = `
@@ -137,7 +155,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
               📍
             </a>
           `;
-          
           div.onclick = (e) => {
             e.preventDefault();
             if (navigator.geolocation) {
@@ -145,7 +162,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
                 (position) => {
                   const { latitude, longitude } = position.coords;
                   map.setView([latitude, longitude], 10);
-                  
                   L.marker([latitude, longitude])
                     .addTo(map)
                     .bindPopup('You are here!')
@@ -160,11 +176,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
               alert('Geolocation is not supported by this browser');
             }
           };
-          
           return div;
         }
       });
-      new GeolocationControl().addTo(map);
+      new (GeolocationControl as any)().addTo(map);
 
       mapInstanceRef.current = map;
     }
@@ -173,9 +188,23 @@ const MapComponent: React.FC<MapComponentProps> = ({
       if (mapInstanceRef.current) {
         mapInstanceRef.current.remove();
         mapInstanceRef.current = null;
+        baseLayerRef.current = null;
       }
     };
   }, []);
+
+  // Switch base layer when language changes
+  useEffect(() => {
+    if (!mapInstanceRef.current) return;
+    const newBase = createBaseLayer(mapLabelLanguage);
+    if (baseLayerRef.current) {
+      try {
+        mapInstanceRef.current.removeLayer(baseLayerRef.current);
+      } catch {}
+    }
+    newBase.addTo(mapInstanceRef.current);
+    baseLayerRef.current = newBase;
+  }, [mapLabelLanguage]);
 
   // Update markers when destinations change
   useEffect(() => {
@@ -244,7 +273,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
             <div key={category} className="flex items-center space-x-2 text-xs">
               <div 
                 className="w-3 h-3 rounded-full border border-white"
-                style={{ backgroundColor: color }}
+                style={{ backgroundColor: color as string }}
               ></div>
               <span className="text-gray-700 dark:text-gray-300 capitalize">
                 {category === 'hidden-gems' ? 'Hidden Gems' : category}

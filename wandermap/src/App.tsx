@@ -22,6 +22,10 @@ function App() {
   const [user, setUser] = useState(null);
   const [savedDestinations, setSavedDestinations] = useState<SavedDestination[]>([]);
   const [tripPlans, setTripPlans] = useState<TripPlan[]>([]);
+  const [mapLabelLanguage, setMapLabelLanguage] = useState<'en' | 'de' | 'local'>(() => {
+    const saved = localStorage.getItem('wandermap-label-language');
+    return saved === 'de' || saved === 'local' || saved === 'en' ? (saved as 'en' | 'de' | 'local') : 'en';
+  });
   
   const [filters, setFilters] = useState<FilterState>({
     categories: [],
@@ -59,6 +63,11 @@ function App() {
       document.documentElement.classList.add('dark');
     }
   }, []);
+
+  // Persist map label language
+  useEffect(() => {
+    localStorage.setItem('wandermap-label-language', mapLabelLanguage);
+  }, [mapLabelLanguage]);
 
   // Debounced search function
   const debouncedSearch = React.useMemo(
@@ -174,6 +183,8 @@ function App() {
         searchQuery={filters.searchQuery}
         darkMode={darkMode}
         user={user}
+        mapLabelLanguage={mapLabelLanguage}
+        onMapLabelLanguageChange={setMapLabelLanguage}
       />
 
       <main className="flex h-[calc(100vh-4rem)]">
@@ -198,6 +209,7 @@ function App() {
                     setSelectedDestination(dest);
                     setSidebarOpen(true);
                   }}
+                  mapLabelLanguage={mapLabelLanguage}
                 />
               </div>
 

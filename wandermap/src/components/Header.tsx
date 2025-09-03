@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Filter, Moon, Sun, User, Menu, X, Compass } from 'lucide-react';
+import { Search, Filter, Moon, Sun, User, Menu, X, Compass, Globe } from 'lucide-react';
 
 interface HeaderProps {
   activeTab: 'explore' | 'saved' | 'planner';
@@ -11,6 +11,8 @@ interface HeaderProps {
   searchQuery: string;
   darkMode: boolean;
   user: any;
+  mapLabelLanguage: 'en' | 'de' | 'local';
+  onMapLabelLanguageChange: (lang: 'en' | 'de' | 'local') => void;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -22,7 +24,9 @@ const Header: React.FC<HeaderProps> = ({
   onAuthClick,
   searchQuery,
   darkMode,
-  user
+  user,
+  mapLabelLanguage,
+  onMapLabelLanguageChange
 }) => {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,8 +41,6 @@ const Header: React.FC<HeaderProps> = ({
 
   const handleSearchInput = (value: string) => {
     onSearch(value);
-    
-    // Simple autocomplete simulation
     if (value.length > 1) {
       const suggestions = [
         'Paris, France',
@@ -126,8 +128,6 @@ const Header: React.FC<HeaderProps> = ({
                           transition-all duration-200"
               />
             </div>
-            
-            {/* Autocomplete Dropdown */}
             {isSearchFocused && autocompleteResults.length > 0 && (
               <div className="search-autocomplete">
                 {autocompleteResults.map((suggestion, index) => (
@@ -146,6 +146,22 @@ const Header: React.FC<HeaderProps> = ({
 
           {/* Controls */}
           <div className="flex items-center space-x-2">
+            {/* Language Selector */}
+            <div className="hidden sm:flex items-center space-x-2 p-1 rounded-lg border border-gray-200 dark:border-gray-700">
+              <Globe className="w-4 h-4 text-gray-600 dark:text-gray-300" />
+              <select
+                aria-label="Map labels language"
+                title="Map labels language"
+                value={mapLabelLanguage}
+                onChange={(e) => onMapLabelLanguageChange(e.target.value as 'en' | 'de' | 'local')}
+                className="bg-transparent text-sm text-gray-700 dark:text-gray-200 focus:outline-none"
+              >
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="local">Lokal</option>
+              </select>
+            </div>
+
             {/* Filter Button */}
             <button
               onClick={onToggleFilter}
