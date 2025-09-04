@@ -210,10 +210,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
           try { mapInstanceRef.current.removeLayer(adminLayerRef.current); } catch {}
           adminLayerRef.current = null;
         }
-        if (glLayerRef.current) {
-          try { mapInstanceRef.current.removeLayer(glLayerRef.current); } catch {}
-          glLayerRef.current = null;
-        }
+
         if (baseLayerRef.current) {
           try { mapInstanceRef.current.removeLayer(baseLayerRef.current); } catch {}
           baseLayerRef.current = null;
