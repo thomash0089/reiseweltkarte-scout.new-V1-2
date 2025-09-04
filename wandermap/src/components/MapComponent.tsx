@@ -131,7 +131,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
     return style;
   };
 
-  const addVectorBaseLayer = async (map: L.Map, lang: 'en' | 'de' | 'local') => {
+  const addLabelOverlay = async (map: L.Map, lang: 'en' | 'de' | 'local') => {
+    if (lang === 'local') return false;
     try {
       const base = getOpenFreeMapStyleUrl();
       const tryUrls = [`${base}/style.json`, base];
@@ -146,12 +147,26 @@ const MapComponent: React.FC<MapComponentProps> = ({
       }
       if (!style) throw new Error('Unable to fetch OpenFreeMap style');
       const patched = applyTextPatches(style, lang);
+      // Hide non-symbol layers for a pure label overlay
+      patched.layers = patched.layers.map((ly: any) => {
+        if (ly.type !== 'symbol') {
+          ly.layout = { ...(ly.layout||{}), visibility: 'none' };
+        } else {
+          ly.paint = {
+            ...(ly.paint||{}),
+            'text-color': '#222222',
+            'text-halo-color': '#ffffff',
+            'text-halo-width': 1.2
+          };
+        }
+        return ly;
+      });
       const gl = (L as any).maplibreGL({ style: patched });
       gl.addTo(map);
       glLayerRef.current = gl;
       return true;
     } catch (e) {
-      console.warn('Vector layer failed, falling back to raster:', e);
+      console.warn('Label overlay failed', e);
       return false;
     }
   };
@@ -170,15 +185,12 @@ const MapComponent: React.FC<MapComponentProps> = ({
         dragging: true
       });
 
-      // Initial base layer: prefer OpenFreeMap vector tiles (no API key), fallback to raster
-      (async () => {
-        const usedVector = await addVectorBaseLayer(map, mapLabelLanguage);
-        if (!usedVector) {
-          const base = createRasterBaseLayer(mapLabelLanguage);
-          base.addTo(map);
-          baseLayerRef.current = base;
-        }
-      })();
+      // Initial base layer: OSM raster (consistent style)
+      const base = createRasterBaseLayer('local');
+      base.addTo(map);
+      baseLayerRef.current = base;
+      // Label overlay for language
+      (async () => { await addLabelOverlay(map, mapLabelLanguage); })();
 
       // Add fullscreen control
       const FullscreenControl = L.Control.extend({
@@ -264,34 +276,15 @@ const MapComponent: React.FC<MapComponentProps> = ({
     };
   }, []);
 
-  // Switch base layer when language changes
+  // Language switch: keep OSM base, swap label overlay only
   useEffect(() => {
     if (!mapInstanceRef.current) return;
-
     (async () => {
-      // Replace vector layer if present; otherwise try to enable vector layer
       if (glLayerRef.current) {
         try { mapInstanceRef.current!.removeLayer(glLayerRef.current); } catch {}
         glLayerRef.current = null;
       }
-      const usedVector = await addVectorBaseLayer(mapInstanceRef.current!, mapLabelLanguage);
-      if (usedVector) {
-        if (baseLayerRef.current) {
-          try { mapInstanceRef.current!.removeLayer(baseLayerRef.current); } catch {}
-          baseLayerRef.current = null;
-        }
-        return;
-      }
-
-      // Fallback to raster switching
-      const newBase = createRasterBaseLayer(mapLabelLanguage);
-      if (baseLayerRef.current) {
-        try {
-          mapInstanceRef.current.removeLayer(baseLayerRef.current);
-        } catch {}
-      }
-      newBase.addTo(mapInstanceRef.current);
-      baseLayerRef.current = newBase;
+      await addLabelOverlay(mapInstanceRef.current!, mapLabelLanguage);
     })();
   }, [mapLabelLanguage]);
 
