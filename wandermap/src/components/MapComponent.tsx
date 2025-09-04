@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import 'maplibre-gl/dist/maplibre-gl.css';
-import '@maplibre/maplibre-gl-leaflet';
+
 import { Destination } from '../types';
 import { scoreRegionByMonths } from '../utils/seasons';
 import { ActivityType } from './ActivitySelector';
@@ -29,10 +28,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
   const mapInstanceRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const baseLayerRef = useRef<L.TileLayer | null>(null);
-  const glLayerRef = useRef<any>(null);
+
   const adminLayerRef = useRef<L.GeoJSON | null>(null);
   const profilesRef = useRef<ProfilesDB | null>(null);
-  const OPENFREEMAP_STYLE_BASE = 'https://tiles.openfreemap.org/styles/liberty';
+
 
   // Category colors for markers
   const categoryColors = {
@@ -91,111 +90,55 @@ const MapComponent: React.FC<MapComponentProps> = ({
     }
   };
 
-  const createRasterBaseLayer = (_lang: 'en' | 'de' | 'local') => {
-    const commonOpts = {
+  const createOSMLayer = (lang: 'en' | 'de' | 'local') => {
+    const commonOpts: L.TileLayerOptions = {
       maxZoom: 19,
       detectRetina: true,
-      keepBuffer: 4 as number,
-      updateWhenIdle: true
+      keepBuffer: 4,
+      updateWhenIdle: true,
+      noWrap: true,
+      zoomOffset: 1, // use higher-zoom tiles to render larger labels
+      maxNativeZoom: 19
     };
-
-    // Unified raster fallback (same cartographic style for all)
+    if (lang === 'de') {
+      return L.tileLayer('https://tile.openstreetmap.de/tile/{z}/{x}/{y}.png', {
+        ...commonOpts,
+        attribution: '&copy; OpenStreetMap contributors, style: OSM DE'
+      });
+    }
+    // local and en fallback
     return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       ...commonOpts,
-      attribution: '&copy; OpenStreetMap contributors',
-      maxNativeZoom: 19
+      attribution: '&copy; OpenStreetMap contributors'
     });
   };
 
-  const getOpenFreeMapStyleUrl = () => {
-    return OPENFREEMAP_STYLE_BASE;
-  };
 
-  const applyTextPatches = (style: any, lang: 'en' | 'de' | 'local') => {
-    if (!style || !style.layers) return style;
-    const langKey = lang === 'en' || lang === 'de' ? `name:${lang}` : 'name';
-    style.layers = style.layers.map((layer: any) => {
-      if (layer.type === 'symbol' && layer.layout) {
-        layer.layout['text-size'] = [
-          'interpolate', ['linear'], ['zoom'],
-          2, 16,
-          6, 18,
-          10, 21,
-          14, 24
-        ];
-        if (layer.layout['text-field']) {
-          if (lang === 'local') {
-            layer.layout['text-field'] = ['coalesce', ['get', 'name'], ['get', 'name:latin'], ['get', 'name_en']];
-          } else {
-            layer.layout['text-field'] = ['coalesce', ['get', langKey], ['get', 'name:latin'], ['get', 'name']];
-          }
-        }
-      }
-      return layer;
-    });
-    return style;
-  };
-
-  const addLabelOverlay = async (map: L.Map, lang: 'en' | 'de' | 'local') => {
-    if (lang === 'local') return false;
-    try {
-      const base = getOpenFreeMapStyleUrl();
-      const tryUrls = [`${base}/style.json`, base];
-      let style: any | null = null;
-      for (const u of tryUrls) {
-        try {
-          const res = await fetch(u);
-          if (!res.ok) continue;
-          style = await res.json();
-          break;
-        } catch {}
-      }
-      if (!style) throw new Error('Unable to fetch OpenFreeMap style');
-      const patched = applyTextPatches(style, lang);
-      // Hide non-symbol layers for a pure label overlay
-      patched.layers = patched.layers.map((ly: any) => {
-        if (ly.type !== 'symbol') {
-          ly.layout = { ...(ly.layout||{}), visibility: 'none' };
-        } else {
-          ly.paint = {
-            ...(ly.paint||{}),
-            'text-color': '#222222',
-            'text-halo-color': '#ffffff',
-            'text-halo-width': 1.2
-          };
-        }
-        return ly;
-      });
-      const gl = (L as any).maplibreGL({ style: patched });
-      gl.addTo(map);
-      glLayerRef.current = gl;
-      return true;
-    } catch (e) {
-      console.warn('Label overlay failed', e);
-      return false;
-    }
-  };
 
   // Initialize map
   useEffect(() => {
     if (mapRef.current && !mapInstanceRef.current) {
       const map = L.map(mapRef.current, {
         center: [20, 0],
-        zoom: 2,
+        zoom: 3,
         minZoom: 2,
         maxZoom: 18,
         zoomControl: true,
         scrollWheelZoom: true,
         doubleClickZoom: true,
-        dragging: true
+        dragging: true,
+        worldCopyJump: false
       });
 
-      // Initial base layer: OSM raster (consistent style)
-      const base = createRasterBaseLayer('local');
+      // Constrain to one world copy
+      const bounds = L.latLngBounds(L.latLng(-85, -180), L.latLng(85, 180));
+      map.setMaxBounds(bounds);
+      (map as any).options.maxBoundsViscosity = 1.0;
+
+      // OSM base layer with zoomOffset for larger labels
+      const base = createOSMLayer(mapLabelLanguage);
       base.addTo(map);
       baseLayerRef.current = base;
-      // Label overlay for language
-      (async () => { await addLabelOverlay(map, mapLabelLanguage); })();
 
       // Add fullscreen control
       const FullscreenControl = L.Control.extend({
@@ -281,16 +224,15 @@ const MapComponent: React.FC<MapComponentProps> = ({
     };
   }, []);
 
-  // Language switch: keep OSM base, swap label overlay only
+  // Language switch: swap OSM tile source (DE vs Standard)
   useEffect(() => {
     if (!mapInstanceRef.current) return;
-    (async () => {
-      if (glLayerRef.current) {
-        try { mapInstanceRef.current!.removeLayer(glLayerRef.current); } catch {}
-        glLayerRef.current = null;
-      }
-      await addLabelOverlay(mapInstanceRef.current!, mapLabelLanguage);
-    })();
+    const newBase = createOSMLayer(mapLabelLanguage);
+    if (baseLayerRef.current) {
+      try { mapInstanceRef.current.removeLayer(baseLayerRef.current); } catch {}
+    }
+    newBase.addTo(mapInstanceRef.current);
+    baseLayerRef.current = newBase;
   }, [mapLabelLanguage]);
 
   // Admin-1 overlay coloring by season/activity
