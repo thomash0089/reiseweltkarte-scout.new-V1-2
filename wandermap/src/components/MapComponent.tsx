@@ -6,7 +6,7 @@ import '@maplibre/maplibre-gl-leaflet';
 import { Destination } from '../types';
 import { scoreRegionByMonths } from '../utils/seasons';
 import { ActivityType } from './ActivitySelector';
-import { ProfilesDB, rateRegion } from '../utils/activityProfiles';
+import { ProfilesDB, rateRegion, rateMonth } from '../utils/activityProfiles';
 import { hazardsFor } from '../utils/hazards';
 
 interface MapComponentProps {
