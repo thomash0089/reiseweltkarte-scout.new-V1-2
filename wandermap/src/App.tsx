@@ -8,6 +8,7 @@ import SavedDestinations from './components/SavedDestinations';
 import TripPlanner from './components/TripPlanner';
 import AuthModal from './components/AuthModal';
 import SeasonSelector, { SeasonSelection } from './components/SeasonSelector';
+import ActivitySelector, { ActivityType } from './components/ActivitySelector';
 import { debounce } from 'lodash';
 import './App.css';
 
@@ -25,6 +26,9 @@ function App() {
   const [tripPlans, setTripPlans] = useState<TripPlan[]>([]);
   const [seasonMonths, setSeasonMonths] = useState<number[]>(() => {
     try { return JSON.parse(localStorage.getItem('wm-season-months')||'[]'); } catch { return []; }
+  });
+  const [activity, setActivity] = useState<ActivityType>(() => {
+    return (localStorage.getItem('wm-activity') as ActivityType) || 'city';
   });
   const [mapLabelLanguage, setMapLabelLanguage] = useState<'en' | 'de' | 'local'>(() => {
     const saved = localStorage.getItem('wandermap-label-language');
@@ -201,12 +205,21 @@ function App() {
         />
 
         {/* Season Selector */}
-        <div className="absolute z-20 top-20 left-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 shadow">
-          <div className="text-xs font-semibold mb-1 text-gray-700 dark:text-gray-200">Travel months</div>
-          <SeasonSelector value={{ months: seasonMonths }} onChange={(v)=>{
-            setSeasonMonths(v.months);
-            localStorage.setItem('wm-season-months', JSON.stringify(v.months));
-          }} />
+        <div className="absolute z-20 top-20 left-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 shadow space-y-2">
+          <div>
+            <div className="text-xs font-semibold mb-1 text-gray-700 dark:text-gray-200">Reisezeit (Monate)</div>
+            <SeasonSelector value={{ months: seasonMonths }} onChange={(v)=>{
+              setSeasonMonths(v.months);
+              localStorage.setItem('wm-season-months', JSON.stringify(v.months));
+            }} />
+          </div>
+          <div>
+            <div className="text-xs font-semibold mb-1 text-gray-700 dark:text-gray-200">Aktivität</div>
+            <ActivitySelector value={activity} onChange={(v)=>{ setActivity(v); localStorage.setItem('wm-activity', v); }} />
+            <div className="mt-1 text-[10px] text-gray-500 dark:text-gray-400">
+              Strand: SST ≥23°C, Luft ≥22°C, Niederschlag ≤80mm · Wandern: 10–22°C, ≤90mm · Städte: 12–27°C, ≤100mm
+            </div>
+          </div>
         </div>
 
         {/* Main Content */}
@@ -224,6 +237,7 @@ function App() {
                   }}
                   mapLabelLanguage={mapLabelLanguage}
                   seasonMonths={seasonMonths}
+                  activity={activity}
                 />
               </div>
 

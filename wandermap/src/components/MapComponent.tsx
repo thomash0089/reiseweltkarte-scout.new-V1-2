@@ -5,6 +5,8 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import '@maplibre/maplibre-gl-leaflet';
 import { Destination } from '../types';
 import { scoreRegionByMonths } from '../utils/seasons';
+import { ActivityType } from './ActivitySelector';
+import { ProfilesDB, rateRegion } from '../utils/activityProfiles';
 
 interface MapComponentProps {
   destinations: Destination[];
@@ -12,6 +14,7 @@ interface MapComponentProps {
   onDestinationSelect: (destination: Destination) => void;
   mapLabelLanguage: 'en' | 'de' | 'local';
   seasonMonths?: number[]; // 0-11
+  activity?: ActivityType;
 }
 
 const MapComponent: React.FC<MapComponentProps> = ({
@@ -27,6 +30,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
   const baseLayerRef = useRef<L.TileLayer | null>(null);
   const glLayerRef = useRef<any>(null);
   const adminLayerRef = useRef<L.GeoJSON | null>(null);
+  const profilesRef = useRef<ProfilesDB | null>(null);
   const OPENFREEMAP_STYLE_BASE = 'https://tiles.openfreemap.org/styles/liberty';
 
   // Category colors for markers
@@ -288,12 +292,25 @@ const MapComponent: React.FC<MapComponentProps> = ({
     })();
   }, [mapLabelLanguage]);
 
-  // Admin-1 overlay coloring by season
+  // Admin-1 overlay coloring by season/activity
   useEffect(() => {
     if (!mapInstanceRef.current) return;
 
     const load = async () => {
       try {
+        // Load profiles (if present)
+        if (!profilesRef.current) {
+          try {
+            const p = await fetch('/data/travel/profiles_admin1.json');
+            if (p.ok) profilesRef.current = await p.json();
+          } catch {}
+          if (!profilesRef.current) {
+            try {
+              const p2 = await fetch('/data/travel/profiles_admin1.sample.json');
+              if (p2.ok) profilesRef.current = await p2.json();
+            } catch {}
+          }
+        }
         const resp = await fetch('/data/admin1/admin1_50m.geojson');
         const geo = await resp.json();
         if (adminLayerRef.current) {
@@ -302,10 +319,18 @@ const MapComponent: React.FC<MapComponentProps> = ({
         }
         const layer = L.geoJSON(geo as any, {
           style: (feature: any) => {
-            const lat = feature.properties?.latitude ?? 0;
-            const admin = feature.properties?.admin;
-            const name = feature.properties?.name_en || feature.properties?.name;
-            const rating = scoreRegionByMonths(lat, admin, name, seasonMonths || []);
+            // Prefer ERA5 profiles if available
+            const id = feature.properties?.adm1_code || String(feature.properties?.ne_id || feature.properties?.name_en);
+            const rec = profilesRef.current?.features.find(f => f.id === id);
+            let rating: 'best'|'good'|'other';
+            if (rec && seasonMonths && seasonMonths.length) {
+              rating = rateRegion((feature as any).activity || 'city', seasonMonths, rec);
+            } else {
+              const lat = feature.properties?.latitude ?? 0;
+              const admin = feature.properties?.admin;
+              const name = feature.properties?.name_en || feature.properties?.name;
+              rating = scoreRegionByMonths(lat, admin, name, seasonMonths || []);
+            }
             if (rating === 'best') return { color: '#16a34a', weight: 0.5, fillColor: '#16a34a', fillOpacity: 0.35 };
             if (rating === 'good') return { color: '#eab308', weight: 0.5, fillColor: '#eab308', fillOpacity: 0.25 };
             return { color: '#00000000', weight: 0, fillColor: '#00000000', fillOpacity: 0 };
