@@ -79,37 +79,25 @@ const MapComponent: React.FC<MapComponentProps> = ({
   };
 
   const createBaseLayer = (lang: 'en' | 'de' | 'local') => {
-    const commonOpts = {
-      maxZoom: 19,
-      detectRetina: false,
-      keepBuffer: 4 as number,
-      updateWhenIdle: true
-    };
-
     if (lang === 'de') {
       return L.tileLayer('https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-        ...commonOpts,
         attribution: '&copy; OpenStreetMap contributors | Style: OpenStreetMap DE',
-        maxNativeZoom: 19,
-        zoomOffset: 0
+        maxZoom: 19,
+        detectRetina: true
       });
     }
-
     if (lang === 'en') {
-      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
-        ...commonOpts,
+      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
         subdomains: 'abcd',
-        maxNativeZoom: 20,
-        zoomOffset: 1
+        maxZoom: 20,
+        detectRetina: true
       });
     }
-
     return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      ...commonOpts,
       attribution: '&copy; OpenStreetMap contributors',
-      maxNativeZoom: 19,
-      zoomOffset: 0
+      maxZoom: 19,
+      detectRetina: true
     });
   };
 
@@ -118,13 +106,16 @@ const MapComponent: React.FC<MapComponentProps> = ({
     if (mapRef.current && !mapInstanceRef.current) {
       const map = L.map(mapRef.current, {
         center: [20, 0],
-        zoom: 2,
-        minZoom: 2,
+        zoom: 3,
+        minZoom: 3,
         maxZoom: 18,
         zoomControl: true,
         scrollWheelZoom: true,
         doubleClickZoom: true,
-        dragging: true
+        dragging: true,
+        zoomSnap: 0.25,
+        zoomDelta: 0.25,
+        wheelPxPerZoomLevel: 120
       });
 
       // Initial base layer
