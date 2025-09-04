@@ -79,25 +79,37 @@ const MapComponent: React.FC<MapComponentProps> = ({
   };
 
   const createBaseLayer = (lang: 'en' | 'de' | 'local') => {
+    const commonOpts = {
+      maxZoom: 19,
+      detectRetina: false,
+      keepBuffer: 4 as number,
+      updateWhenIdle: true
+    };
+
     if (lang === 'de') {
       return L.tileLayer('https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+        ...commonOpts,
         attribution: '&copy; OpenStreetMap contributors | Style: OpenStreetMap DE',
-        maxZoom: 19,
-        detectRetina: true
+        maxNativeZoom: 19,
+        zoomOffset: 0
       });
     }
+
     if (lang === 'en') {
-      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+        ...commonOpts,
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
         subdomains: 'abcd',
-        maxZoom: 20,
-        detectRetina: true
+        maxNativeZoom: 20,
+        zoomOffset: 1
       });
     }
+
     return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      ...commonOpts,
       attribution: '&copy; OpenStreetMap contributors',
-      maxZoom: 19,
-      detectRetina: true
+      maxNativeZoom: 19,
+      zoomOffset: 0
     });
   };
 
