@@ -4,25 +4,29 @@ import 'leaflet/dist/leaflet.css';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import '@maplibre/maplibre-gl-leaflet';
 import { Destination } from '../types';
+import { scoreRegionByMonths } from '../utils/seasons';
 
 interface MapComponentProps {
   destinations: Destination[];
   selectedDestination: Destination | null;
   onDestinationSelect: (destination: Destination) => void;
   mapLabelLanguage: 'en' | 'de' | 'local';
+  seasonMonths?: number[]; // 0-11
 }
 
 const MapComponent: React.FC<MapComponentProps> = ({
   destinations,
   selectedDestination,
   onDestinationSelect,
-  mapLabelLanguage
+  mapLabelLanguage,
+  seasonMonths
 }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const baseLayerRef = useRef<L.TileLayer | null>(null);
   const glLayerRef = useRef<any>(null);
+  const adminLayerRef = useRef<L.GeoJSON | null>(null);
   const OPENFREEMAP_STYLE_BASE = 'https://tiles.openfreemap.org/styles/liberty';
 
   // Category colors for markers
@@ -242,6 +246,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
     return () => {
       if (mapInstanceRef.current) {
+        if (adminLayerRef.current) {
+          try { mapInstanceRef.current.removeLayer(adminLayerRef.current); } catch {}
+          adminLayerRef.current = null;
+        }
         if (glLayerRef.current) {
           try { mapInstanceRef.current.removeLayer(glLayerRef.current); } catch {}
           glLayerRef.current = null;
@@ -286,6 +294,50 @@ const MapComponent: React.FC<MapComponentProps> = ({
       baseLayerRef.current = newBase;
     })();
   }, [mapLabelLanguage]);
+
+  // Admin-1 overlay coloring by season
+  useEffect(() => {
+    if (!mapInstanceRef.current) return;
+
+    const load = async () => {
+      try {
+        const resp = await fetch('/data/admin1/admin1_50m.geojson');
+        const geo = await resp.json();
+        if (adminLayerRef.current) {
+          try { mapInstanceRef.current!.removeLayer(adminLayerRef.current); } catch {}
+          adminLayerRef.current = null;
+        }
+        const layer = L.geoJSON(geo as any, {
+          style: (feature: any) => {
+            const lat = feature.properties?.latitude ?? 0;
+            const admin = feature.properties?.admin;
+            const name = feature.properties?.name_en || feature.properties?.name;
+            const rating = scoreRegionByMonths(lat, admin, name, seasonMonths || []);
+            if (rating === 'best') return { color: '#16a34a', weight: 0.5, fillColor: '#16a34a', fillOpacity: 0.35 };
+            if (rating === 'good') return { color: '#eab308', weight: 0.5, fillColor: '#eab308', fillOpacity: 0.25 };
+            return { color: '#00000000', weight: 0, fillColor: '#00000000', fillOpacity: 0 };
+          },
+          onEachFeature: (feature: any, l: L.Layer) => {
+            l.on('mouseover', () => {
+              (l as any).setStyle?.({ weight: 1.2 });
+            });
+            l.on('mouseout', () => {
+              (l as any).setStyle?.({ weight: 0.5 });
+            });
+            const name = feature.properties?.name_en || feature.properties?.name;
+            const admin = feature.properties?.admin;
+            (l as any).bindTooltip(`${name}${admin ? ' · ' + admin : ''}`, { sticky: true });
+          }
+        });
+        layer.addTo(mapInstanceRef.current!);
+        adminLayerRef.current = layer;
+      } catch (e) {
+        console.warn('Failed to load admin1 overlay', e);
+      }
+    };
+
+    load();
+  }, [seasonMonths]);
 
   // Update markers when destinations change
   useEffect(() => {
