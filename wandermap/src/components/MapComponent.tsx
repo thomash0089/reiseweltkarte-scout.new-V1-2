@@ -7,6 +7,7 @@ import { Destination } from '../types';
 import { scoreRegionByMonths } from '../utils/seasons';
 import { ActivityType } from './ActivitySelector';
 import { ProfilesDB, rateRegion } from '../utils/activityProfiles';
+import { hazardsFor } from '../utils/hazards';
 
 interface MapComponentProps {
   destinations: Destination[];
@@ -319,32 +320,48 @@ const MapComponent: React.FC<MapComponentProps> = ({
         }
         const layer = L.geoJSON(geo as any, {
           style: (feature: any) => {
-            // Prefer ERA5 profiles if available
             const id = feature.properties?.adm1_code || String(feature.properties?.ne_id || feature.properties?.name_en);
             const rec = profilesRef.current?.features.find(f => f.id === id);
-            let rating: 'best'|'good'|'other';
-            if (rec && seasonMonths && seasonMonths.length) {
+            const lat = feature.properties?.latitude ?? feature.properties?.LATITUDE ?? feature.properties?.lat ?? 0;
+            const lon = feature.properties?.longitude ?? feature.properties?.LONGITUDE ?? feature.properties?.lon ?? 0;
+            let rating: 'best'|'good'|'other'|'bad';
+            let hazards: string[] = [];
+            if (seasonMonths && seasonMonths.length) {
+              hazards = hazardsFor(lat, lon, seasonMonths);
+            }
+            if (hazards.length) {
+              rating = 'bad';
+            } else if (rec && seasonMonths && seasonMonths.length) {
               rating = rateRegion((feature as any).activity || 'city', seasonMonths, rec);
             } else {
-              const lat = feature.properties?.latitude ?? 0;
               const admin = feature.properties?.admin;
               const name = feature.properties?.name_en || feature.properties?.name;
               rating = scoreRegionByMonths(lat, admin, name, seasonMonths || []);
             }
             if (rating === 'best') return { color: '#16a34a', weight: 0.5, fillColor: '#16a34a', fillOpacity: 0.35 };
             if (rating === 'good') return { color: '#eab308', weight: 0.5, fillColor: '#eab308', fillOpacity: 0.25 };
+            if (rating === 'bad') return { color: '#ef4444', weight: 0.5, fillColor: '#ef4444', fillOpacity: 0.25 };
             return { color: '#00000000', weight: 0, fillColor: '#00000000', fillOpacity: 0 };
           },
           onEachFeature: (feature: any, l: L.Layer) => {
-            l.on('mouseover', () => {
-              (l as any).setStyle?.({ weight: 1.2 });
-            });
-            l.on('mouseout', () => {
-              (l as any).setStyle?.({ weight: 0.5 });
-            });
+            const id = feature.properties?.adm1_code || String(feature.properties?.ne_id || feature.properties?.name_en);
+            const rec = profilesRef.current?.features.find(f => f.id === id);
             const name = feature.properties?.name_en || feature.properties?.name;
             const admin = feature.properties?.admin;
-            (l as any).bindTooltip(`${name}${admin ? ' · ' + admin : ''}`, { sticky: true });
+            const lat = feature.properties?.latitude ?? feature.properties?.lat ?? 0;
+            const lon = feature.properties?.longitude ?? feature.properties?.lon ?? 0;
+            const haz = seasonMonths && seasonMonths.length ? hazardsFor(lat, lon, seasonMonths) : [];
+            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            let bestList = '';
+            if (rec) {
+              const bestMonths: number[] = [];
+              for (let m=0;m<12;m++){ if (rateMonth('city', m, rec) === 'best') bestMonths.push(m); }
+              bestList = bestMonths.map(m=>months[m]).join(', ');
+            }
+            const reason = haz.length ? `Risiko: ${haz.join(', ')}` : (rec ? 'Klimatische Eignung nach ERA5' : 'Heuristische Eignung');
+            (l as any).bindTooltip(`<div class="text-xs"><div class="font-semibold">${name}${admin ? ' · ' + admin : ''}</div><div>${reason}</div>${bestList ? `<div>Beste Monate: ${bestList}</div>`:''}</div>`, { sticky: true });
+            l.on('mouseover', () => {(l as any).setStyle?.({ weight: 1.2 });});
+            l.on('mouseout', () => {(l as any).setStyle?.({ weight: 0.5 });});
           }
         });
         layer.addTo(mapInstanceRef.current!);
