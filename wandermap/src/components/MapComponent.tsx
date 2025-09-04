@@ -23,7 +23,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
   const markersRef = useRef<L.Marker[]>([]);
   const baseLayerRef = useRef<L.TileLayer | null>(null);
   const glLayerRef = useRef<any>(null);
-  const mapTilerKey = (import.meta as any).env?.VITE_MAPTILER_KEY as string | undefined;
+  const OPENFREEMAP_STYLE_BASE = 'https://tiles.openfreemap.org/styles/liberty';
 
   // Category colors for markers
   const categoryColors = {
@@ -82,7 +82,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
     }
   };
 
-  const createRasterBaseLayer = (lang: 'en' | 'de' | 'local') => {
+  const createRasterBaseLayer = (_lang: 'en' | 'de' | 'local') => {
     const commonOpts = {
       maxZoom: 19,
       detectRetina: true,
@@ -90,23 +90,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
       updateWhenIdle: true
     };
 
-    if (lang === 'de') {
-      return L.tileLayer('https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-        ...commonOpts,
-        attribution: '&copy; OpenStreetMap contributors | Style: OpenStreetMap DE',
-        maxNativeZoom: 19
-      });
-    }
-
-    if (lang === 'en') {
-      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        ...commonOpts,
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-        subdomains: 'abcd',
-        maxNativeZoom: 20
-      });
-    }
-
+    // Unified raster fallback (same cartographic style for all)
     return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       ...commonOpts,
       attribution: '&copy; OpenStreetMap contributors',
@@ -114,16 +98,13 @@ const MapComponent: React.FC<MapComponentProps> = ({
     });
   };
 
-  const getVectorStyleUrl = (lang: 'en' | 'de' | 'local') => {
-    if (!mapTilerKey) return undefined;
-    const base = `https://api.maptiler.com/maps/openstreetmap/style.json?key=${mapTilerKey}`;
-    if (lang === 'en') return `${base}&language=en`;
-    if (lang === 'de') return `${base}&language=de`;
-    return base; // local labels
+  const getOpenFreeMapStyleUrl = () => {
+    return OPENFREEMAP_STYLE_BASE;
   };
 
-  const applyBiggerTextToStyle = (style: any) => {
+  const applyTextPatches = (style: any, lang: 'en' | 'de' | 'local') => {
     if (!style || !style.layers) return style;
+    const langKey = lang === 'en' || lang === 'de' ? `name:${lang}` : 'name';
     style.layers = style.layers.map((layer: any) => {
       if (layer.type === 'symbol' && layer.layout) {
         layer.layout['text-size'] = [
@@ -133,6 +114,13 @@ const MapComponent: React.FC<MapComponentProps> = ({
           10, 18,
           14, 20
         ];
+        if (layer.layout['text-field']) {
+          if (lang === 'local') {
+            layer.layout['text-field'] = ['coalesce', ['get', 'name'], ['get', 'name:latin'], ['get', 'name_en']];
+          } else {
+            layer.layout['text-field'] = ['coalesce', ['get', langKey], ['get', 'name:latin'], ['get', 'name']];
+          }
+        }
       }
       return layer;
     });
@@ -141,11 +129,19 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
   const addVectorBaseLayer = async (map: L.Map, lang: 'en' | 'de' | 'local') => {
     try {
-      const styleUrl = getVectorStyleUrl(lang);
-      if (!styleUrl) throw new Error('No MapTiler key');
-      const res = await fetch(styleUrl);
-      const style = await res.json();
-      const patched = applyBiggerTextToStyle(style);
+      const base = getOpenFreeMapStyleUrl();
+      const tryUrls = [`${base}/style.json`, base];
+      let style: any | null = null;
+      for (const u of tryUrls) {
+        try {
+          const res = await fetch(u);
+          if (!res.ok) continue;
+          style = await res.json();
+          break;
+        } catch {}
+      }
+      if (!style) throw new Error('Unable to fetch OpenFreeMap style');
+      const patched = applyTextPatches(style, lang);
       const gl = (L as any).maplibreGL({ style: patched });
       gl.addTo(map);
       glLayerRef.current = gl;
@@ -170,7 +166,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
         dragging: true
       });
 
-      // Initial base layer: prefer vector with MapTiler, fallback to raster
+      // Initial base layer: prefer OpenFreeMap vector tiles (no API key), fallback to raster
       (async () => {
         const usedVector = await addVectorBaseLayer(map, mapLabelLanguage);
         if (!usedVector) {
@@ -265,15 +261,13 @@ const MapComponent: React.FC<MapComponentProps> = ({
     if (!mapInstanceRef.current) return;
 
     (async () => {
-      // If vector is in use, replace it
-      if (glLayerRef.current || mapTilerKey) {
+      // Replace vector layer if present; otherwise try to enable vector layer
         if (glLayerRef.current) {
           try { mapInstanceRef.current!.removeLayer(glLayerRef.current); } catch {}
           glLayerRef.current = null;
         }
         const usedVector = await addVectorBaseLayer(mapInstanceRef.current!, mapLabelLanguage);
         if (usedVector) {
-          // Also remove raster if present
           if (baseLayerRef.current) {
             try { mapInstanceRef.current!.removeLayer(baseLayerRef.current); } catch {}
             baseLayerRef.current = null;
