@@ -115,13 +115,18 @@ const MapComponent: React.FC<MapComponentProps> = ({
     const langKey = lang === 'en' || lang === 'de' ? `name:${lang}` : 'name';
     style.layers = style.layers.map((layer: any) => {
       if (layer.type === 'symbol' && layer.layout) {
+        // Consistently large labels across zooms
         layer.layout['text-size'] = [
           'interpolate', ['linear'], ['zoom'],
-          2, 16,
-          6, 18,
-          10, 21,
-          14, 24
+          2, 20,
+          5, 22,
+          8, 24,
+          12, 28,
+          16, 32
         ];
+        layer.layout['text-allow-overlap'] = true;
+        layer.layout['symbol-avoid-edges'] = false;
+        layer.layout['text-letter-spacing'] = 0.05;
         if (layer.layout['text-field']) {
           if (lang === 'local') {
             layer.layout['text-field'] = ['coalesce', ['get', 'name'], ['get', 'name:latin'], ['get', 'name_en']];
