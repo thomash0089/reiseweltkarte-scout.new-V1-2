@@ -7,6 +7,7 @@ import DestinationSidebar from './components/DestinationSidebar';
 import SavedDestinations from './components/SavedDestinations';
 import TripPlanner from './components/TripPlanner';
 import AuthModal from './components/AuthModal';
+import SeasonSelector, { SeasonSelection } from './components/SeasonSelector';
 import { debounce } from 'lodash';
 import './App.css';
 
@@ -22,6 +23,9 @@ function App() {
   const [user, setUser] = useState(null);
   const [savedDestinations, setSavedDestinations] = useState<SavedDestination[]>([]);
   const [tripPlans, setTripPlans] = useState<TripPlan[]>([]);
+  const [seasonMonths, setSeasonMonths] = useState<number[]>(() => {
+    try { return JSON.parse(localStorage.getItem('wm-season-months')||'[]'); } catch { return []; }
+  });
   const [mapLabelLanguage, setMapLabelLanguage] = useState<'en' | 'de' | 'local'>(() => {
     const saved = localStorage.getItem('wandermap-label-language');
     return saved === 'de' || saved === 'local' || saved === 'en' ? (saved as 'en' | 'de' | 'local') : 'en';
@@ -196,6 +200,15 @@ function App() {
           onClose={() => setFilterPanelOpen(false)}
         />
 
+        {/* Season Selector */}
+        <div className="absolute z-20 top-20 left-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-2 shadow">
+          <div className="text-xs font-semibold mb-1 text-gray-700 dark:text-gray-200">Travel months</div>
+          <SeasonSelector value={{ months: seasonMonths }} onChange={(v)=>{
+            setSeasonMonths(v.months);
+            localStorage.setItem('wm-season-months', JSON.stringify(v.months));
+          }} />
+        </div>
+
         {/* Main Content */}
         <div className="flex-1 flex">
           {activeTab === 'explore' && (
@@ -210,6 +223,7 @@ function App() {
                     setSidebarOpen(true);
                   }}
                   mapLabelLanguage={mapLabelLanguage}
+                  seasonMonths={seasonMonths}
                 />
               </div>
 
