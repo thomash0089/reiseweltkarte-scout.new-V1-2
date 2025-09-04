@@ -109,10 +109,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
       if (layer.type === 'symbol' && layer.layout) {
         layer.layout['text-size'] = [
           'interpolate', ['linear'], ['zoom'],
-          2, 14,
-          6, 16,
-          10, 18,
-          14, 20
+          2, 16,
+          6, 18,
+          10, 21,
+          14, 24
         ];
         if (layer.layout['text-field']) {
           if (lang === 'local') {
@@ -262,18 +262,17 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
     (async () => {
       // Replace vector layer if present; otherwise try to enable vector layer
-        if (glLayerRef.current) {
-          try { mapInstanceRef.current!.removeLayer(glLayerRef.current); } catch {}
-          glLayerRef.current = null;
+      if (glLayerRef.current) {
+        try { mapInstanceRef.current!.removeLayer(glLayerRef.current); } catch {}
+        glLayerRef.current = null;
+      }
+      const usedVector = await addVectorBaseLayer(mapInstanceRef.current!, mapLabelLanguage);
+      if (usedVector) {
+        if (baseLayerRef.current) {
+          try { mapInstanceRef.current!.removeLayer(baseLayerRef.current); } catch {}
+          baseLayerRef.current = null;
         }
-        const usedVector = await addVectorBaseLayer(mapInstanceRef.current!, mapLabelLanguage);
-        if (usedVector) {
-          if (baseLayerRef.current) {
-            try { mapInstanceRef.current!.removeLayer(baseLayerRef.current); } catch {}
-            baseLayerRef.current = null;
-          }
-          return;
-        }
+        return;
       }
 
       // Fallback to raster switching
