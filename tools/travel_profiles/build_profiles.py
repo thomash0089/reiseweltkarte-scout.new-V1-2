@@ -52,10 +52,24 @@ else:
     tmpdir = tempfile.mkdtemp()
     tavg_zip = os.path.join(tmpdir, 'wc2.1_10m_tavg.zip')
     prec_zip = os.path.join(tmpdir, 'wc2.1_10m_prec.zip')
+    def fetch(urls, dest):
+        for u in urls:
+            try:
+                urllib.request.urlretrieve(u, dest)
+                return True
+            except Exception:
+                continue
+        raise RuntimeError(f"Failed to download any of: {urls}")
     if not os.path.exists(tavg_zip):
-        urllib.request.urlretrieve('https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_10m_tavg.zip', tavg_zip)
+        fetch([
+            'https://geodata.ucdavis.edu/worldclim/v2.1/base/wc2.1_10m_tavg.zip',
+            'https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_10m_tavg.zip'
+        ], tavg_zip)
     if not os.path.exists(prec_zip):
-        urllib.request.urlretrieve('https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_10m_prec.zip', prec_zip)
+        fetch([
+            'https://geodata.ucdavis.edu/worldclim/v2.1/base/wc2.1_10m_prec.zip',
+            'https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_10m_prec.zip'
+        ], prec_zip)
     with zipfile.ZipFile(tavg_zip) as z: z.extractall(tmpdir)
     with zipfile.ZipFile(prec_zip) as z: z.extractall(tmpdir)
     # Build arrays by month using rasterio (values: tavg in °C *10)
