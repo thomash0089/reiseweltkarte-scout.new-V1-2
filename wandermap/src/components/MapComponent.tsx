@@ -116,7 +116,7 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
   const getVectorStyleUrl = (lang: 'en' | 'de' | 'local') => {
     if (!mapTilerKey) return undefined;
-    const base = `https://api.maptiler.com/maps/streets-v2/style.json?key=${mapTilerKey}`;
+    const base = `https://api.maptiler.com/maps/openstreetmap/style.json?key=${mapTilerKey}`;
     if (lang === 'en') return `${base}&language=en`;
     if (lang === 'de') return `${base}&language=de`;
     return base; // local labels
