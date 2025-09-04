@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import '@maplibre/maplibre-gl-leaflet';
 import { Destination } from '../types';
 
 interface MapComponentProps {
@@ -20,6 +22,8 @@ const MapComponent: React.FC<MapComponentProps> = ({
   const mapInstanceRef = useRef<L.Map | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
   const baseLayerRef = useRef<L.TileLayer | null>(null);
+  const glLayerRef = useRef<any>(null);
+  const mapTilerKey = (import.meta as any).env?.VITE_MAPTILER_KEY as string | undefined;
 
   // Category colors for markers
   const categoryColors = {
@@ -78,10 +82,10 @@ const MapComponent: React.FC<MapComponentProps> = ({
     }
   };
 
-  const createBaseLayer = (lang: 'en' | 'de' | 'local') => {
+  const createRasterBaseLayer = (lang: 'en' | 'de' | 'local') => {
     const commonOpts = {
       maxZoom: 19,
-      detectRetina: false,
+      detectRetina: true,
       keepBuffer: 4 as number,
       updateWhenIdle: true
     };
@@ -90,27 +94,66 @@ const MapComponent: React.FC<MapComponentProps> = ({
       return L.tileLayer('https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
         ...commonOpts,
         attribution: '&copy; OpenStreetMap contributors | Style: OpenStreetMap DE',
-        maxNativeZoom: 19,
-        zoomOffset: 0
+        maxNativeZoom: 19
       });
     }
 
     if (lang === 'en') {
-      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+      return L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         ...commonOpts,
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
         subdomains: 'abcd',
-        maxNativeZoom: 20,
-        zoomOffset: 1
+        maxNativeZoom: 20
       });
     }
 
     return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       ...commonOpts,
       attribution: '&copy; OpenStreetMap contributors',
-      maxNativeZoom: 19,
-      zoomOffset: 0
+      maxNativeZoom: 19
     });
+  };
+
+  const getVectorStyleUrl = (lang: 'en' | 'de' | 'local') => {
+    if (!mapTilerKey) return undefined;
+    const base = `https://api.maptiler.com/maps/streets-v2/style.json?key=${mapTilerKey}`;
+    if (lang === 'en') return `${base}&language=en`;
+    if (lang === 'de') return `${base}&language=de`;
+    return base; // local labels
+  };
+
+  const applyBiggerTextToStyle = (style: any) => {
+    if (!style || !style.layers) return style;
+    style.layers = style.layers.map((layer: any) => {
+      if (layer.type === 'symbol' && layer.layout) {
+        layer.layout['text-size'] = [
+          'interpolate', ['linear'], ['zoom'],
+          2, 14,
+          6, 16,
+          10, 18,
+          14, 20
+        ];
+      }
+      return layer;
+    });
+    return style;
+  };
+
+  const addVectorBaseLayer = async (map: L.Map, lang: 'en' | 'de' | 'local') => {
+    try {
+      const styleUrl = getVectorStyleUrl(lang);
+      if (!styleUrl) throw new Error('No MapTiler key');
+      const res = await fetch(styleUrl);
+      const style = await res.json();
+      const patched = applyBiggerTextToStyle(style);
+      const gl = (L as any).maplibreGL({ style: patched });
+      gl.addTo(map);
+      glLayerRef.current = gl;
+      return true;
+    } catch (e) {
+      console.warn('Vector layer failed, falling back to raster:', e);
+      return false;
+    }
   };
 
   // Initialize map
@@ -127,10 +170,15 @@ const MapComponent: React.FC<MapComponentProps> = ({
         dragging: true
       });
 
-      // Initial base layer
-      const base = createBaseLayer(mapLabelLanguage);
-      base.addTo(map);
-      baseLayerRef.current = base;
+      // Initial base layer: prefer vector with MapTiler, fallback to raster
+      (async () => {
+        const usedVector = await addVectorBaseLayer(map, mapLabelLanguage);
+        if (!usedVector) {
+          const base = createRasterBaseLayer(mapLabelLanguage);
+          base.addTo(map);
+          baseLayerRef.current = base;
+        }
+      })();
 
       // Add fullscreen control
       const FullscreenControl = L.Control.extend({
@@ -198,9 +246,16 @@ const MapComponent: React.FC<MapComponentProps> = ({
 
     return () => {
       if (mapInstanceRef.current) {
+        if (glLayerRef.current) {
+          try { mapInstanceRef.current.removeLayer(glLayerRef.current); } catch {}
+          glLayerRef.current = null;
+        }
+        if (baseLayerRef.current) {
+          try { mapInstanceRef.current.removeLayer(baseLayerRef.current); } catch {}
+          baseLayerRef.current = null;
+        }
         mapInstanceRef.current.remove();
         mapInstanceRef.current = null;
-        baseLayerRef.current = null;
       }
     };
   }, []);
@@ -208,14 +263,35 @@ const MapComponent: React.FC<MapComponentProps> = ({
   // Switch base layer when language changes
   useEffect(() => {
     if (!mapInstanceRef.current) return;
-    const newBase = createBaseLayer(mapLabelLanguage);
-    if (baseLayerRef.current) {
-      try {
-        mapInstanceRef.current.removeLayer(baseLayerRef.current);
-      } catch {}
-    }
-    newBase.addTo(mapInstanceRef.current);
-    baseLayerRef.current = newBase;
+
+    (async () => {
+      // If vector is in use, replace it
+      if (glLayerRef.current || mapTilerKey) {
+        if (glLayerRef.current) {
+          try { mapInstanceRef.current!.removeLayer(glLayerRef.current); } catch {}
+          glLayerRef.current = null;
+        }
+        const usedVector = await addVectorBaseLayer(mapInstanceRef.current!, mapLabelLanguage);
+        if (usedVector) {
+          // Also remove raster if present
+          if (baseLayerRef.current) {
+            try { mapInstanceRef.current!.removeLayer(baseLayerRef.current); } catch {}
+            baseLayerRef.current = null;
+          }
+          return;
+        }
+      }
+
+      // Fallback to raster switching
+      const newBase = createRasterBaseLayer(mapLabelLanguage);
+      if (baseLayerRef.current) {
+        try {
+          mapInstanceRef.current.removeLayer(baseLayerRef.current);
+        } catch {}
+      }
+      newBase.addTo(mapInstanceRef.current);
+      baseLayerRef.current = newBase;
+    })();
   }, [mapLabelLanguage]);
 
   // Update markers when destinations change
