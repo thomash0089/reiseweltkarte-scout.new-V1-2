@@ -113,8 +113,6 @@ const MapComponent: React.FC<MapComponentProps> = ({
     });
   };
 
-
-
   // Initialize map
   useEffect(() => {
     if (mapRef.current && !mapInstanceRef.current) {
